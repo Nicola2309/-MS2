@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>My Google Map</title>
+  <!-- INDEX.HTML CODE 
+  <header>
+    <!--------------------------------------------------------------------------- SideNav slide-out button 
+<a href="#" data-activates="slide-out" class="btn btn-primary p-3 button-collapse"><i
+  class="fas fa-bars"></i></a>
+
+<!------------------------------------------------------------------------------ Sidebar navigation, inspired by the mdbootstrap snippet 
+  <div id="slide-out" class="side-nav side wide sn-bg-1">
+    <ul class="custom-scrollbar">
+      <!------------------------------------------------------------------------ Logo 
+      <li>
+         <div class="logo logo-wrapper sn-ad-avatar-wrapper">
+          <a href="index.html"><img id="company-logo" src="assets/images/logo.png" alt="company logo"></a>
+        </div>
+      </li>
+      <!------------------------------------------------------------------------ Side navigation links 
+      <li>
+        <ul class="collapsible collapsible-accordion nav-els">
+       <li><a id="toggle" class="waves-effect"><i class="sv-slim-icon fas fa-angle-double-left"></i>Minimize menu</a>
+      </li>
+          <li><a href="index.html" class="collapsible-header waves-effect arrow-r active"><i class="sv-slim-icon fas fa-home"></i> Home</a>
+          </li>
+          <li><a href="pools.html" class="collapsible-header waves-effect arrow-r"><i class="sv-slim-icon fas fa-water"></i> Hot Pools</a>
+          </li>
+          <li><a href="history.html" class="collapsible-header waves-effect arrow-r"><i class="sv-slim-icon fas fa-landmark"></i> Historical Interest</a>
+          </li>
+          <li><a href="meal.html" class="collapsible-header waves-effect arrow-r"><i class="sv-slim-icon fas fa-utensils"></i> Local Meals</a>
+          </li>
+          <li><a href="role.html" class="collapsible-header waves-effect arrow-r"><i class="sv-slim-icon fas fa-compass"></i> Our Role</a>
+          </li>
+          <li><a href="contact.html" class="collapsible-header waves-effect arrow-r"><i class="sv-slim-icon fas fa-phone-alt"></i> Contacts</a>
+          </li>
+        </ul>
+      </li>
+    </ul>
+
+    <!--------------------------------------------------- Sidebar Style
+    <div class="sidenav-bg rgba-grey-strong"></div>
+  </div>
+
+  <div>
+   <img src="assets/images/tuscany.jpg" id="tus-pic" class="img-fluid"  alt=" Hot Thermal Pools in Saturnia.">
+  </div>
+</header>
+  -->
+  <style>
+    #map{
+      height:400px;
+      width:100%;
+    }
+  </style>
+</head>
+<body>
+  <h1>My Google Map</h1>
+  <div id="map"></div>
+  <script>
+    function initMap(){
+      // Map options
+      var options = {
+        zoom:8,
+        center:{lat:42.3601,lng:-71.0589}
+      }
+
+      // New map
+      var map = new google.maps.Map(document.getElementById('map'), options);
+
+      // Listen for click on map
+      google.maps.event.addListener(map, 'click', function(event){
+        // Add marker
+        addMarker({coords:event.latLng});
+      });
+
+      /*
+      // Add marker
+      var marker = new google.maps.Marker({
+        position:{lat:42.4668,lng:-70.9495},
+        map:map,
+        icon:'https://developers.google.com/maps/documentation/javascript/examples/full/images/beachflag.png'
+      });
+
+      var infoWindow = new google.maps.InfoWindow({
+        content:'<h1>Lynn MA</h1>'
+      });
+
+      marker.addListener('click', function(){
+        infoWindow.open(map, marker);
+      });
+      */
+
+      // Array of markers
+      var markers = [
+        {
+          coords:{lat:42.4668,lng:-70.9495},
+          iconImage:'https://developers.google.com/maps/documentation/javascript/examples/full/images/beachflag.png',
+          content:'<h1>Lynn MA</h1>'
+        },
+        {
+          coords:{lat:42.8584,lng:-70.9300},
+          content:'<h1>Amesbury MA</h1>'
+        },
+        {
+          coords:{lat:42.7762,lng:-71.0773}
+        }
+      ];
+
+      // Loop through markers
+      for(var i = 0;i < markers.length;i++){
+        // Add marker
+        addMarker(markers[i]);
+      }
+
+      // Add Marker Function
+      function addMarker(props){
+        var marker = new google.maps.Marker({
+          position:props.coords,
+          map:map,
+          //icon:props.iconImage
+        });
+
+        // Check for customicon
+        if(props.iconImage){
+          // Set icon image
+          marker.setIcon(props.iconImage);
+        }
+
+        // Check content
+        if(props.content){
+          var infoWindow = new google.maps.InfoWindow({
+            content:props.content
+          });
+
+          marker.addListener('click', function(){
+            infoWindow.open(map, marker);
+          });
+        }
+      }
+    }
+  </script>
+  <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA372PcuJQKYrKADjhHTLLDVcfsoCzF-4M&callback=initMap">
+    </script>
+</body>
+</html>

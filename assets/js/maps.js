@@ -14,7 +14,7 @@
                     center: centerCords
                 });
                 addMarkerInfo();
-            }
+            
 
             window.onload = function() {
             initMap();
@@ -33,7 +33,7 @@
                     const infowindow = new google.maps.InfoWindow({
                         content: contentString,
                     });
-
+                }
 // -----------------------------------------------  Necessary functions for a good UX experience
                     marker.addListener("click", () => {
                         closeOtherInfo(); 
