@@ -4,74 +4,81 @@
     <meta charset="utf-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta http-equiv="X-UA-Compatible" content="ie=edge">
+<!-- Bootstrap CSS CDN -->
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.css" integrity="sha512-sjJT//vtBb7ohxokcp2yH2FHfU+9B1OQFVJzZ1JwIfe3oVHTEqk/67CYSihA0CoiRPdWNfUm5xHyaeg8wRUQuA==" crossorigin="anonymous" />
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.lite.css" integrity="sha512-OnEMk7iRVTkcpxwEr7xrrrTfdlQyl02JWRSFnq4DOJ3K+Fv4Q112yMNkgPV0/q9dlEYMZVRQg20vTL+bXfc1Dg==" crossorigin="anonymous" />
-      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
       <link href="https://fonts.googleapis.com/css2?family=Cormorant+SC&family=Open+Sans:wght@600&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="navbar.css">
       <link rel="stylesheet" href="assets/css/style.css">
       <title>Tuscany Thermal Wellness</title>
 </head>
 <body>
- <header>
-    <!--------------------------------------------------------------------------- SideNav slide-out button -->
-<a href="#" data-activates="slide-out" class="btn btn-primary p-3 button-collapse"><i
-  class="fas fa-bars"></i></a>
 
-<!------------------------------------------------------------------------------ Sidebar navigation, inspired by the mdbootstrap snippet -->
-  <div id="slide-out" class="side-nav side wide sn-bg-1">
-    <ul class="custom-scrollbar">
-      <!------------------------------------------------------------------------ Logo -->
-      <li>
-         <div class="logo logo-wrapper sn-ad-avatar-wrapper">
-          <a href="index.html"><img id="company-logo" src="assets/images/logo.png" alt="company logo"></a>
+    <!----------------------------- Bootstrapious code restyled -->
+    <div class="container-fluid">
+    <!----------------------------- SideNavigation -->
+    <div id="hamburgerBtn">&#9776</div>
+    <nav id="sideMenu">
+        <div class="nav-brand">
+            <a href="index.html" class="logo navbar-brand"><img id="company-logo" src="assets/images/logo.png" alt="company logo"></a>
+            <p><a href="index.html">Natural<strong>Beauty</strong> </a></p>
         </div>
-      </li>
-      <!------------------------------------------------------------------------ Side navigation links -->
-      <li>
-        <ul class="collapsible collapsible-accordion nav-els">
-       <li><a id="toggle" class="waves-effect"><i class="sv-slim-icon fas fa-angle-double-left"></i>Minimize menu</a>
-      </li>
-          <li><a href="index.html" class="collapsible-header waves-effect arrow-r active"><i class="sv-slim-icon fas fa-home"></i> Home</a>
-          </li>
-          <li><a href="pools.html" class="collapsible-header waves-effect arrow-r"><i class="sv-slim-icon fas fa-water"></i> Hot Pools</a>
-          </li>
-          <li><a href="history.html" class="collapsible-header waves-effect arrow-r"><i class="sv-slim-icon fas fa-landmark"></i> Historical Interest</a>
-          </li>
-          <li><a href="meal.html" class="collapsible-header waves-effect arrow-r"><i class="sv-slim-icon fas fa-utensils"></i> Local Meals</a>
-          </li>
-          <li><a href="role.html" class="collapsible-header waves-effect arrow-r"><i class="sv-slim-icon fas fa-compass"></i> Our Role</a>
-          </li>
-          <li><a href="contact.html" class="collapsible-header waves-effect arrow-r"><i class="sv-slim-icon fas fa-phone-alt"></i> Contacts</a>
-          </li>
+
+        <ul class="nav-items">
+            <li class="active">
+                 <a href="index.html"><i class="fas fa-home"></i>Home</a>
+            </li>
+            <li>
+                <a href="pools.html"><i class=" fas fa-water"></i> Hot Pools</a>
+            </li>
+            <li>
+                <a href="history.html"><i class=" fas fa-landmark"></i> Historical Interest</a>
+            </li>
+            <li>
+                <a href="meal.html"><i class="fas fa-utensils"></i> Local Meals</a>
+            </li>
+            <li>
+                <a href="role.html"><i class="fas fa-compass"></i> Our Role</a>
+            </li>
+            <li>
+                <a href="contact.html"><i class="fas fa-phone-alt"></i> Contacts</a>
+            </li>
         </ul>
-      </li>
-    </ul>
+        <div class="footer">
+            <ul>
+                <li><a href="facebook.com"><i class="fas fa-facebook"></i></a></li>
+                <li><a href="instagram.com"><i class="fas fa-instagram"></i></a></li>
+                
+            </ul>
+        </div>
+    </nav>
 
-    <!--------------------------------------------------- Sidebar Style-->
-    <div class="sidenav-bg rgba-grey-strong"></div>
-  </div>
-
-  <div>
-   <img src="assets/images/tuscany.jpg" id="tus-pic" class="img-fluid"  alt=" Hot Thermal Pools in Saturnia.">
-  </div>
-</header>
-
-<section>
-    <h2>Explore Tuscany's Natural Beauty</h2>
+            <div>
+            <img src="assets/images/tuscany.jpg" id="tus-pic" class="img-fluid"  alt=" Hot Thermal Pools in Saturnia.">
+        </div>
+               <section>
+        <h2>Explore Tuscany's Natural Beauty</h2>
 
         <p>What you see above are the free thermal pools of Saturnia, just one of the several thermal sites you can visit in Tuscany.<br>
             Some of them became luxury SPA structures, some of them are immersed in nature, completely free to visit and enjoy. <br>
             Bathing in thermal water is one of the most famous ancient cures for spirit, skin and body.<br>
             We decided to bring it to you providing a map of all of the therma sites, SPA's and Natural Spring Waters, <br>
             together with some recommended restaurants and the major historical spots in each area.
-         </p>   
-        
-</section>
+         </p>  
+        </section>
+        </div>
 
-<section>
-<div class="map" id="map"></div>
-</section>
+
+     
+  
+
+
+<div class="container">
+<div class="row">
+<div class="map col-12" id="map"></div>
+</div>
+</div>
 
 
 
@@ -84,8 +91,10 @@
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js" integrity="sha512-Mug9KHKmroQFMLm93zGrjhibM2z2Obg9l6qFG2qKjXEXkMp/VDkI4uju9m4QKPjWSwQ6O2qzZEnJDEeCw0Blcw==" crossorigin="anonymous"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+    <!-- jQuery Custom Scroller CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
     <script src="assets/js/maps.js" type="text/javascript"></script>
     <script async defer
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCVLFpOteRAja24BTRfyj6NVm8KjcqcNJs&callback=initMap">
@@ -93,7 +102,13 @@
     <script src="https://unpkg.com/@googlemaps/markerclustererplus/dist/index.min.js"></script>
     <script src="assets/js/script.js" type="text/javascript"></script>
  
-      
+          <script type="text/javascript">
+        $(document).ready(function () {
+            $('#sidebarCollapse').on('click', function () {
+                $('#sidebar').toggleClass('active');
+            });
+        });
+    </script>
 
 
 </body>

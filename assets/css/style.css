@@ -1,34 +1,5 @@
-.side-nav.wide.slim {
-  width: 3.75rem !important;
-}
-
-li{
-        list-style: none;
-}
-
-#nav-els a{
-    color: #444;
-    text-decoration: none;
-    letter-spacing: 2px;
-    font-weight: 600px;
-    font-size: 21px;
-    transition: 0.5s;
-    transition-property: background;
-}
-
-#nav-els a:hover{
-   background: rgb(0, 153, 255);
-}
-
-#tusPic{
-    margin-left: auto;
-    margin-right: auto;
-}
-
-
-.map{
-    height: 450px;
-    width: 650px;
-    margin-right: auto !important;
-    margin-left: auto !important;
+#map{
+    width: 500px;
+    height: 600px;
+    margin: 0 auto;
 }

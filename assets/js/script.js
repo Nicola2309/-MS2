@@ -1,10 +1,6 @@
-$(document).ready(function() {
-  // SideNav Button Initialization
-  $(".button-collapse").sideNav({
-    slim: true
-  });
-  // SideNav Scrollbar Initialization
-  var sideNavScrollbar = document.querySelector('.custom-scrollbar');
-  var ps = new PerfectScrollbar(sideNavScrollbar);
-});
+const hamburgerBtn = document.getElementById('hamburgerBtn');
 
+
+hamburgerBtn.addEventListener('click', () => {
+  sideMenu.classList.toggle('open');
+})
