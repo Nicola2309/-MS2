@@ -22,7 +22,7 @@
 
 // -----------------------------------------------  Function styling the marker
             function addMarkerInfo() {
-                for( var i = 0; i < markersOnMap.length; i++){
+                for ( var i = 0; i < markersOnMap.length; i++){
                     let contentString = '<h3>'+ markersOnMap[i].placeName + '<h3>'
                     const marker = new google.maps.Marker({
                         position: markersOnMap[i].LatLng[0],

@@ -1,10 +1,7 @@
-html {
-  min-height: 100vh;
-}
+
 
 body {
     font-family: 'Open Sans', sans-serif;
-    margin-left: 250px;
     position: relative;
 }
 h1,
@@ -15,185 +12,79 @@ h5  {
     font-family: 'Cormorant SC', serif;
 }
 
-* {
-    box-sizing: border-box;
-}
 
 #company-logo{
-    height: 130px;
-    width: 100px;
+    height: 132px;
+    width: 120px;
     text-align: center;
-    margin-left: 10px;
+    margin-left: 6px;
 }
 
-a{
+a {
     font-family: 'Cormorant SC', serif;
     color: lightgrey;
     text-decoration: none;
+    margin-right: 15px;
+    font-size: 1.2em;
 }
 
-strong {
-  color: blue;
+.collapse{
+    justify-content: center;
+    font-weight: 700;
 }
 
 
-.nav-brand p {
-    text-transform: uppercase;
-}
-
-.container {
-    padding: 40px;
-    margin: 0 auto;
-    max-width: 1000px;
-    text-align: center;
-}
-
-#sideMenu {
-    width: 250px;
-    position: fixed;
-    top: 0;
-    left: 0;
-    height: 100vh;
-    background-color: grey;
-    color: white;
-    padding: 30px 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    opacity: 0.98;
-}
-
-.nav-items {
-    padding-inline-start: 0;
-}
-
-.nav-items > li{
+.nav-item > li{
   list-style-type: none;
-  margin-bottom: 10px;
+  margin-bottom: 18px;
   text-align: left;
 }
 
-.nav-items > li:hover{
+.nav-item > li:hover{
   cursor: pointer;
-  transform: scale(1.1)
+  transform: scale(1.1);
 }
 
-li a i {
-    display: block;
-}
 
-#hamburgerBtn {
-  display: none;
-  position: absolute;
-  top: 30px;
-  right: 30px;
-}
+/*---------------------------------Media Queries*/
 
-#hamburgerBtn:hover {
-  cursor: pointer;
-}
-
-@media only screen and (max-width: 767px) {
-
-  body {
-    margin-left: 0px;
+@media screen and (max-width:767px) {
+  #company-logo {
+      width: 112px !important;
+      height: auto;
   }
 
-  #sideMenu {
-    z-index: 999;
-    width: 100vw; 
-    transform: translateX(-1000px);
-    transition: 500ms transform;
-  }
-  
-  #sideMenu.open {
-    transform: translateX(0);
-  }
-  
-  .nav-items > li{
-    list-style-type: none;
-    margin-bottom: 10px;
-    text-align: center;
-  }
-  
-  .nav-items a i{
-      display: block;
-      padding: 2px 0;
+  .nav-item {
+      font-size: initial;
+      justify-content: none;
   }
 
-  #hamburgerBtn {
-    display: inline-block;
-    z-index: 1000;
-    border: inset;
-    top: 5px;
-    right: 3px
-  }
   .nav-brand{
      text-align: center;
      padding-left: 20px
   }
 
   #tus-pic{
-      width: 99%;
+      width: 100%;
   }
 
   #map{
       width: 90% !important;
-      height: 520px !important;
+      height: 450px !important;
   }
 }
 
 
-
-
-@media screen and ( max-width:1024px ){
-  body {
-    margin-left: 0px;
-  }
-
+@media screen and (max-width:1024px ){
   #company-logo{
       width: 180px;
       height: auto;
   }
-
-  .nav-brand p{
-      font-size: 1.5em;
-  }
-
-  #sideMenu {
-    z-index: 999;
-    width: 100vw; 
-    transform: translateX(-1024px);
-    transition: 500ms transform;
-  }
   
-  #sideMenu.open {
-    transform: translateX(0);
-  }
-  
-  .nav-items > li{
+  .nav-item > li{
     list-style-type: none;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
     text-align: center;
-  }
-  
-  .nav-items{
-      font-size: 1.4em;
-  }
-
-  .nav-items a i{
-      display: block;
-      padding: 2px 0;
-  }
-
-  #hamburgerBtn {
-    display: inline-block;
-    z-index: 1000;
-    border: inset;
-    top: 5px;
-    right: 3px;
-    width: 30px;
-    height: 30px;
   }
 
   .nav-brand{
@@ -201,7 +92,4 @@ li a i {
      padding-left: 20px
   }
 
-  #tus-pic{
-      width: 95%;
-  }
 }
