@@ -58,7 +58,7 @@
                 pool: {
                     icon : 'http://maps.google.com/mapfiles/kml/shapes/water.png'
                 },
-                spa:{
+                spa: {
                     icon : 'http://maps.google.com/mapfiles/kml/shapes/swimming.png'
                 },
                 restaurant: {
@@ -186,6 +186,14 @@
                         lng: 11.134595
                     }],
                     type: 'pool'
+                },                
+                {
+                    placeName: 'ADLER Spa Resort, Bagno Vignoni',
+                    LatLng: [{
+                        lat: 43.030192,
+                        lng: 11.622628
+                    }],
+                    type: 'spa'
                 },
 
  // ----------------------------------------------- Restaurant Locations
@@ -220,12 +228,12 @@
                     }],
                     type: 'restaurant'
                 },                {
-                    placeName: 'Azienda Agricola Crociani, Montepulciano',
+                    placeName: 'Osteria del Borgo, Montepulciano',
                     LatLng: [{
-                        lat: 43.090458, 
-                        lng: 11.781090
+                        lat: 43.093151, 
+                        lng: 11.780736
                     }],
-                    type: 'glass'
+                    type: 'restaurant'
                 },                {
                     placeName: 'Taverna del Grappolo Blu, Montalcino',
                     LatLng: [{
@@ -241,43 +249,134 @@
                         lng: 11.416553
                     }],
                     type: 'glass'
-                },                {
-                    placeName: 'Name of a place',
+                },                
+                {
+                    placeName: 'Osteria lo Spugnone, Bagni San Filippo',
                     LatLng: [{
-                        lat: 22.6,
-                        lng: 88.4
+                        lat: 42.929044, 
+                        lng: 11.701614
                     }],
                     type: 'restaurant'
-                },                {
-                    placeName: 'Name of a place',
+                },                
+                {
+                    placeName: 'Osteria Antico Travaglio, Monteriggioni',
                     LatLng: [{
-                        lat: 22.6,
-                        lng: 88.4
+                        lat: 43.389716,
+                        lng: 11.223747
                     }],
                     type: 'restaurant'
-                },                {
-                    placeName: 'Name of a place',
+                },                
+                {
+                    placeName: 'Ristorante Daniela, San Casciano dei Bagni',
                     LatLng: [{
-                        lat: 22.6,
-                        lng: 88.4
+                        lat: 42.870937,
+                        lng: 11.875331
                     }],
                     type: 'restaurant'
-                },
+                },                
+                {
+                    placeName: 'Hostaria del Ceccottino, Pitigliano',
+                    LatLng: [{
+                        lat: 42.633603,
+                        lng: 11.665421
+                    }],
+                    type: 'restaurant'
+                },                
+                {
+                    placeName: 'Sapori in Torre, Rapolano',
+                    LatLng: [{
+                        lat: 43.287536, 
+                        lng: 11.602880
+                    }],
+                    type: 'restaurant'
+                },                
+                {
+                    placeName: 'Le Vecchie Mura, San Gimignano',
+                    LatLng: [{
+                        lat: 43.466861,
+                        lng: 11.044928
+                    }],
+                    type: 'restaurant'
+                },                
+                {
+                    placeName: 'Ristorante le Due Cecche, Pari',
+                    LatLng: [{
+                        lat: 43.063332,
+                        lng: 11.321183
+                    }],
+                    type: 'restaurant'
+                },                
+                {
+                    placeName: 'La Cascina, Montecatini',
+                    LatLng: [{
+                        lat: 43.884821, 
+                        lng: 10.772455
+                    }],
+                    type: 'restaurant'
+                },                
 
 //-------------------------Historical Locations
                 {
-                    placeName: 'Name of a place',
+                    placeName: 'Fontana Palazzo Piccolomini, Pienza',
                     LatLng: [{
-                        lat: 22.6,
-                        lng: 88.4
+                        lat: 43.076597,
+                        lng: 11.678809
                     }],
                     type: 'landmark'
                 },
                 {
-                    placeName: 'Name of a place',
+                    placeName: 'Mura a Nord, Monteriggioni',
                     LatLng: [{
-                        lat: 22.6,
-                        lng: 88.4
+                        lat: 43.390599, 
+                        lng: 11.222120
+                    }],
+                    type: 'landmark'
+                },                
+                {
+                    placeName: 'Pitigliano',
+                    LatLng: [{
+                        lat: 42.634929,
+                        lng: 11.670008
+                    }],
+                    type: 'landmark'
+                },                
+                {
+                    placeName: 'Piazza del Campo, Siena',
+                    LatLng: [{
+                        lat: 43.318421,
+                        lng: 11.331696
+                    }],
+                    type: 'landmark'
+                },                
+                {
+                    placeName: 'San Gimignano',
+                    LatLng: [{
+                        lat: 43.467450,
+                        lng: 11.043789
+                    }],
+                    type: 'landmark'
+                },                
+                {
+                    placeName: 'Torre Guinigi, Lucca',
+                    LatLng: [{
+                        lat: 43.843695,
+                        lng: 10.506984
+                    }],
+                    type: 'landmark'
+                },                
+                {
+                    placeName: 'Cattedrale Santa Maria del Fiore',
+                    LatLng: [{
+                        lat: 43.773142,
+                        lng: 11.255968
+                    }],
+                    type: 'landmark'
+                },
+                {
+                    placeName: 'Labirinto di Porsenna',
+                    LatLng: [{
+                        lat: 43.015510,
+                        lng: 11.948979
                     }],
                     type: 'landmark'
                 },
