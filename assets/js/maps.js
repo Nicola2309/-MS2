@@ -2,6 +2,7 @@
 
             var map;
             var infoObj = [];
+
             
 
 // -----------------------------------------------  Function implementing the map, code built through the tutorial of Pradip Debnath, link in README
@@ -14,34 +15,9 @@
                     zoom: 8,
                     center: centerCords
                 });
-                addMarkerinfo();
+                setMarkers(map);
             }
-// -----------------------------------------------  Function styling the marker
-            function addMarkerinfo() {
-                for ( var i = 0; i < markersOnMap.length; i++){ 
-                    let  contentString = '<h3>'+ markersOnMap[i].placeName + '<h3>';
 
-                    const marker = new google.maps.Marker({
-                        position: markersOnMap[i].LatLng[0],
-                        icon: icons[markersOnMap[i].type].icon,
-                        map: map
-                    });
-
-                    const infowindow = new google.maps.InfoWindow({
-                        content: contentString,
-                    });
-                    
-
-                    marker.addListener("click", () => {
-                        closeOtherInfo(); 
-                        infowindow.open(marker.get('map'), marker);
-                        infoObj[0] = infowindow;
-                    });
-                               
-                }
-            }    
-            
-        
                 
 // -----------------------------------------------  Necessary function for a good UX experience, close infoWindow
             function closeOtherInfo() {
@@ -54,38 +30,85 @@
             }
             
 
+// -----------------------------------Resizar Markar.
 
-    
-// -----------------------------------------------  icons' position and type
-    
+
+
+
+function setMarkers(map) {
     var icons = {
-                pool: {
-                    icon : 'http://maps.google.com/mapfiles/kml/shapes/water.png',
-// Code provided by StackOverflow, link in README
-                    scaledSize: new google.maps.scaledSize(50, 50), // scaled size
-                    
-                    anchor: new google.maps.Point(0, 0) // anchor
-                },
-                spa: {
-                    icon : 'http://maps.google.com/mapfiles/kml/shapes/swimming.png',
-                    scaledSize: new google.maps.scaledSize(50, 50), // scaled size
-                    origin: new google.maps.Point(0,0), // origin
-                    anchor: new google.maps.Point(0, 0) // anchor
-                },
-                restaurant: {
-                    icon : 'http://maps.google.com/mapfiles/kml/pal2/icon33.png',
-                    scaledSize: new google.maps.scaledSize(50, 50), // scaled size
-                    origin: new google.maps.Point(0,0), // origin
-                    anchor: new google.maps.Point(0, 0) // anchor
-                },
-                landmark: {
-                    icon : 'http://maps.google.com/mapfiles/kml/pushpin/red-pushpin.png',
-                    scaledSize: new google.maps.scaledSize(50, 50), // scaled size
-                    origin: new google.maps.Point(0,0), // origin
-                    anchor: new google.maps.Point(0, 0) // anchor
-                },
-            };
+        pool : { 
+            icon : {
+            url: 'assets/images/icons/spring-icon.png',
+            scaledSize: new google.maps.Size(20, 19),
+            // The origin for this image is (0, 0).
+            origin: new google.maps.Point(0, 0),
+            // The anchor for this image is the base of the flagpole at (0, 32).
+            anchor: new google.maps.Point(0, 9),
+            }
+        },
+        spa : {
+            icon : { 
+            url: 'assets/images/icons/pool-icon.png',
+            scaledSize: new google.maps.Size(20, 27),
+            // The origin for this image is (0, 0).
+            origin: new google.maps.Point(0, 0),
+            // The anchor for this image is the base of the flagpole at (0, 32).
+            anchor: new google.maps.Point(0, 9),
+            }
+        },
+        restaurant : {
+            icon : { 
+            url: 'assets/images/icons/dining-icon.png',
+            scaledSize: new google.maps.Size(20, 25),
+            // The origin for this image is (0, 0).
+            origin: new google.maps.Point(0, 0),
+            // The anchor for this image is the base of the flagpole at (0, 32).
+            anchor: new google.maps.Point(0, 9),
+            }
+        },
+        landmark : {
+            icon : {
+            url: 'assets/images/icons/red-pushpin.png',
+            scaledSize: new google.maps.Size(25, 30),
+            // The origin for this image is (0, 0).
+            origin: new google.maps.Point(0, 0),
+            // The anchor for this image is the base of the flagpole at (0, 32).
+            anchor: new google.maps.Point(0, 9),
+        }
+        },
 
+    };              
+    
+    for (let i = 0; i < markersOnMap.length; i++) {
+        let  contentString = '<h5>'+ markersOnMap[i].placeName + '<h5>';
+
+        const marker = new google.maps.Marker({
+            position: markersOnMap[i].LatLng[0],
+            icon: icons[markersOnMap[i].type].icon,
+            map: map    
+        
+        });
+        const infowindow = new google.maps.InfoWindow({
+            content: contentString,
+        });
+
+
+        marker.addListener("click", () => {
+            closeOtherInfo(); 
+            infowindow.open(marker.get('map'), marker);
+            infoObj[0] = infowindow;
+        });
+                    
+    }
+  
+};
+
+
+
+ 
+
+  
 
             var markersOnMap = [
                 {
