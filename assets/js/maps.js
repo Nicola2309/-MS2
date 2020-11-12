@@ -2,28 +2,25 @@
 
             var map;
             var infoObj = [];
-            var centerCords = {
-                lat: 43.393074,
-                lng: 11.102233
-            };
+            
 
-// -----------------------------------------------  Function implementing the map
+// -----------------------------------------------  Function implementing the map, code built through the tutorial of Pradip Debnath, link in README
             function initMap() {
+                var centerCords = {
+                    lat: 43.393074,
+                    lng: 11.102233
+                };
                 map = new google.maps.Map(document.getElementById('map'), {
                     zoom: 8,
                     center: centerCords
                 });
-                addMarkerInfo();
-            
-
-            window.onload = function() {
-            initMap();
-            };
-
+                addMarkerinfo();
+            }
 // -----------------------------------------------  Function styling the marker
-            function addMarkerInfo() {
-                for ( var i = 0; i < markersOnMap.length; i++){
-                    let contentString = '<h3>'+ markersOnMap[i].placeName + '<h3>'
+            function addMarkerinfo() {
+                for ( var i = 0; i < markersOnMap.length; i++){ 
+                    let  contentString = '<h3>'+ markersOnMap[i].placeName + '<h3>';
+
                     const marker = new google.maps.Marker({
                         position: markersOnMap[i].LatLng[0],
                         icon: icons[markersOnMap[i].type].icon,
@@ -33,43 +30,59 @@
                     const infowindow = new google.maps.InfoWindow({
                         content: contentString,
                     });
-                }
-// -----------------------------------------------  Necessary functions for a good UX experience
+                    
+
                     marker.addListener("click", () => {
                         closeOtherInfo(); 
-                        infowindow.open(map, marker);
+                        infowindow.open(marker.get('map'), marker);
                         infoObj[0] = infowindow;
                     });
+                               
                 }
-            }
-
+            }    
+            
+        
+                
+// -----------------------------------------------  Necessary function for a good UX experience, close infoWindow
             function closeOtherInfo() {
-                if( infoObj.length > 0) {
-                infoObj[0].set("marker", null);
-                infoObj[0].close();
-                infoObj[0].length = 0;
+                if (infoObj.length > 0 ) {
+                    infoObj[0].set("marker", null);
+                    infoObj[0].close();
+                    infoObj[0].length = 0;
                 }
+
             }
+            
+
 
     
 // -----------------------------------------------  icons' position and type
     
     var icons = {
                 pool: {
-                    icon : 'http://maps.google.com/mapfiles/kml/shapes/water.png'
+                    icon : 'http://maps.google.com/mapfiles/kml/shapes/water.png',
+// Code provided by StackOverflow, link in README
+                    scaledSize: new google.maps.scaledSize(50, 50), // scaled size
+                    
+                    anchor: new google.maps.Point(0, 0) // anchor
                 },
                 spa: {
-                    icon : 'http://maps.google.com/mapfiles/kml/shapes/swimming.png'
+                    icon : 'http://maps.google.com/mapfiles/kml/shapes/swimming.png',
+                    scaledSize: new google.maps.scaledSize(50, 50), // scaled size
+                    origin: new google.maps.Point(0,0), // origin
+                    anchor: new google.maps.Point(0, 0) // anchor
                 },
                 restaurant: {
-                    icon : 'http://maps.google.com/mapfiles/kml/pal2/icon33.png'
+                    icon : 'http://maps.google.com/mapfiles/kml/pal2/icon33.png',
+                    scaledSize: new google.maps.scaledSize(50, 50), // scaled size
+                    origin: new google.maps.Point(0,0), // origin
+                    anchor: new google.maps.Point(0, 0) // anchor
                 },
                 landmark: {
-                    icon : 'http://maps.google.com/mapfiles/kml/pushpin/red-pushpin.png'
-                },
-                glass: {
-                    //Icons made Matthias Stasiak 
-                    icon : 'https://drive.google.com/file/d/1Tv11K6eeXdCEUBQ9TfMDhEwP2wt5CC--/view?usp=sharing'
+                    icon : 'http://maps.google.com/mapfiles/kml/pushpin/red-pushpin.png',
+                    scaledSize: new google.maps.scaledSize(50, 50), // scaled size
+                    origin: new google.maps.Point(0,0), // origin
+                    anchor: new google.maps.Point(0, 0) // anchor
                 },
             };
 
@@ -241,14 +254,6 @@
                         lng: 11.489995
                     }],
                     type: 'restaurant'
-                },
-                {                
-                    placeName: 'Cantina Castiglion del Bosco',
-                    LatLng: [{
-                        lat: 43.080726, 
-                        lng: 11.416553
-                    }],
-                    type: 'glass'
                 },                
                 {
                     placeName: 'Osteria lo Spugnone, Bagni San Filippo',
@@ -377,6 +382,14 @@
                     LatLng: [{
                         lat: 43.015510,
                         lng: 11.948979
+                    }],
+                    type: 'landmark'
+                },
+                {
+                    placeName: 'Pisa',
+                    LatLng: [{
+                        lat: 43.722955, 
+                        lng: 10.396598
                     }],
                     type: 'landmark'
                 },
