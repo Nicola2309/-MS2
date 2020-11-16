@@ -40,41 +40,33 @@ function setMarkers(map) {
         pool : { 
             icon : {
             url: 'assets/images/icons/spring-icon.png',
-            scaledSize: new google.maps.Size(20, 19),
-            // The origin for this image is (0, 0).
-            origin: new google.maps.Point(0, 0),
+            scaledSize: new google.maps.Size(30, 30),
             // The anchor for this image is the base of the flagpole at (0, 32).
-            anchor: new google.maps.Point(0, 9),
+            anchor: new google.maps.Point(10, 20),
             }
         },
         spa : {
             icon : { 
             url: 'assets/images/icons/pool-icon.png',
-            scaledSize: new google.maps.Size(20, 27),
-            // The origin for this image is (0, 0).
-            origin: new google.maps.Point(0, 0),
+            scaledSize: new google.maps.Size(27, 27),
             // The anchor for this image is the base of the flagpole at (0, 32).
-            anchor: new google.maps.Point(0, 9),
+            anchor: new google.maps.Point(10, 20),
             }
         },
         restaurant : {
             icon : { 
             url: 'assets/images/icons/dining-icon.png',
-            scaledSize: new google.maps.Size(20, 25),
-            // The origin for this image is (0, 0).
-            origin: new google.maps.Point(0, 0),
+            scaledSize: new google.maps.Size(27, 27),
             // The anchor for this image is the base of the flagpole at (0, 32).
-            anchor: new google.maps.Point(0, 9),
+            anchor: new google.maps.Point(20, 20),
             }
         },
         landmark : {
             icon : {
             url: 'assets/images/icons/red-pushpin.png',
-            scaledSize: new google.maps.Size(25, 30),
-            // The origin for this image is (0, 0).
-            origin: new google.maps.Point(0, 0),
+            scaledSize: new google.maps.Size(27, 27),
             // The anchor for this image is the base of the flagpole at (0, 32).
-            anchor: new google.maps.Point(0, 9),
+            anchor: new google.maps.Point(10, 20),
         }
         },
 
@@ -104,11 +96,6 @@ function setMarkers(map) {
   
 };
 
-
-
- 
-
-  
 
             var markersOnMap = [
                 {
@@ -168,7 +155,7 @@ function setMarkers(map) {
                     type: 'spa'
                 },
                 {
-                    placeName: 'Terme di Chianciano',
+                    placeName: 'Terme Sensoriali di Chianciano',
                     LatLng: [{
                         lat: 43.042778, 
                         lng: 11.816051
@@ -270,14 +257,7 @@ function setMarkers(map) {
                         lng: 11.780736
                     }],
                     type: 'restaurant'
-                },                {
-                    placeName: 'Taverna del Grappolo Blu, Montalcino',
-                    LatLng: [{
-                        lat: 43.059136, 
-                        lng: 11.489995
-                    }],
-                    type: 'restaurant'
-                },                
+                },               
                 {
                     placeName: 'Osteria lo Spugnone, Bagni San Filippo',
                     LatLng: [{

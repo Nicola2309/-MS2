@@ -21,14 +21,11 @@
     margin-top: 30%;
 }
 
-
-
 .display-6,
 .lead {
     margin-left: 24px;
     color: white;
 }
-
 
 .display-6 span{
     font-size: 1.2em;
@@ -57,6 +54,63 @@
 
 .row{
      margin: 0;
+}
+
+/*-------------------------Carousel styling, Going-To Internet tutorial, link in README*/
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+.slid-ing{
+    height: 400px;
+    background-color: rgba(0,0,0,0.1);
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box{
+    width: 300px;
+    height: 210px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: space-between;
+    box-sizing: border-box;
+    margin: 15px 9px;
+}
+
+.model{
+    width: 300px;
+    height: 210px;
+}
+
+.details{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+}
+
+.details p{
+    font-family: 'Open Sans';
+    font-weight: bold;
+    font-size: 12px;
+    color: #6a6a74;
+    text-align: center;
+}
+
+#autoWidth{
+    height: 372px !important;
+}
+
+.straight{
+    display: inherit;
 }
 
 /*---------------------------------Media Queries*/
