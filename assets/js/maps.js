@@ -291,10 +291,10 @@ function setMarkers(map) {
                     type: 'restaurant'
                 },                
                 {
-                    placeName: 'Sapori in Torre, Rapolano',
+                    placeName: 'Agriturismo ischieto, Serre di Rapolano',
                     LatLng: [{
-                        lat: 43.287536, 
-                        lng: 11.602880
+                        lat: 43.263415,
+                        lng: 11.624864 
                     }],
                     type: 'restaurant'
                 },                
@@ -315,10 +315,10 @@ function setMarkers(map) {
                     type: 'restaurant'
                 },                
                 {
-                    placeName: 'La Cascina, Montecatini',
+                    placeName: 'Casa di Gala, Montecatini',
                     LatLng: [{
-                        lat: 43.884821, 
-                        lng: 10.772455
+                        lat: 43.896139,  
+                        lng: 10.789609
                     }],
                     type: 'restaurant'
                 },                
