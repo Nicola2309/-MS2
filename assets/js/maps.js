@@ -325,7 +325,7 @@ function setMarkers(map) {
 
 //-------------------------Historical Locations
                 {
-                    placeName: 'Fontana Palazzo Piccolomini, Pienza',
+                    placeName: 'Pienza',
                     LatLng: [{
                         lat: 43.076597,
                         lng: 11.678809
@@ -396,5 +396,14 @@ function setMarkers(map) {
                     }],
                     type: 'landmark'
                 },
+                {
+                    placeName: 'Radicofani',
+                    LatLng: [{
+                        lat: 42.898582, 
+                        lng: 11.768798
+                    }],
+                    type: 'landmark'
+                },
+                
             ];
 
