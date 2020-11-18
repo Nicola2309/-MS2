@@ -11,15 +11,58 @@
                     lat: 43.393074,
                     lng: 11.102233
                 };
-                map = new google.maps.Map(document.getElementById('map'), {
+                 map = new google.maps.Map(document.getElementById('map'), {
                     zoom: 8,
                     center: centerCords
                 });
                 setMarkers(map);
-            }
+
+ //---------------- Search Box from Google Docs and the Develop Mindfully Tutorial and Michelle Clement
+            var input = document.getElementById("search");
+            var searchBox = new google.maps.places.SearchBox(input);
+
+            map.addListener("bounds_changed", function () {
+                searchBox.setBounds(map.getBounds());
+            });
+
+            var markersSearched = [];
+
+            searchBox.addListener("places_changed", function () {
+                var places = searchBox.getPlaces();
+
+                if (places.length == 0) return;
+
+                markersSearched.forEach(function (m) {
+                m.setMap(null);
+                });
+                var markersSearched = [];
+                
+
+                var bounds = new google.maps.LatLngBounds();
+
+                places.forEach(function (p) {
+                if (!p.geometry) return;
+
+                markersSearched.push(
+                    new google.maps.Marker({
+                    map: map,
+                    title: p.name,
+                    position: p.geometry.location,
+                    })
+                );
+
+                if (p.geometry.viewport) 
+                    bounds.union(p.geometry.viewport);
+                else 
+                bounds.extend(p.geometry.location);
+                });
+
+                map.fitBounds(bounds);
+            });
+        }
 
                 
-// -----------------------------------------------  Necessary function for a good UX experience, close infoWindow
+// -----------------------------------------------  Close Infowindow Function
             function closeOtherInfo() {
                 if (infoObj.length > 0 ) {
                     infoObj[0].set("marker", null);
@@ -30,8 +73,7 @@
             }
             
 
-// -----------------------------------Resizar Markar.
-
+// ------------------------------------------------ Resizing Markers from Google docs and Traversy Media tutorial, link in README
 
 
 
@@ -41,7 +83,6 @@ function setMarkers(map) {
             icon : {
             url: 'assets/images/icons/spring-icon.png',
             scaledSize: new google.maps.Size(30, 30),
-            // The anchor for this image is the base of the flagpole at (0, 32).
             anchor: new google.maps.Point(10, 20),
             }
         },
@@ -49,7 +90,6 @@ function setMarkers(map) {
             icon : { 
             url: 'assets/images/icons/pool-icon.png',
             scaledSize: new google.maps.Size(27, 27),
-            // The anchor for this image is the base of the flagpole at (0, 32).
             anchor: new google.maps.Point(10, 20),
             }
         },
@@ -57,7 +97,6 @@ function setMarkers(map) {
             icon : { 
             url: 'assets/images/icons/dining-icon.png',
             scaledSize: new google.maps.Size(27, 27),
-            // The anchor for this image is the base of the flagpole at (0, 32).
             anchor: new google.maps.Point(20, 20),
             }
         },
@@ -65,12 +104,12 @@ function setMarkers(map) {
             icon : {
             url: 'assets/images/icons/red-pushpin.png',
             scaledSize: new google.maps.Size(27, 27),
-            // The anchor for this image is the base of the flagpole at (0, 32).
             anchor: new google.maps.Point(10, 20),
         }
         },
 
-    };              
+    };  
+
     
     for (let i = 0; i < markersOnMap.length; i++) {
         let  contentString = '<h5>'+ markersOnMap[i].placeName + '<h5>';
@@ -98,6 +137,7 @@ function setMarkers(map) {
 
 
             var markersOnMap = [
+                //----------------------------------- Hot Waters Locations
                 {
                     placeName: 'Terme di Sorano Residence',
                     LatLng: [{
@@ -219,7 +259,7 @@ function setMarkers(map) {
                     type: 'spa'
                 },
 
- // ----------------------------------------------- Restaurant Locations
+                //----------------------------------- Restaurant Locations
                 {
                     placeName: 'ROSSO VIVO Shop e Food Experience | Pizzeria, Chianciano',
                     LatLng: [{
@@ -323,7 +363,7 @@ function setMarkers(map) {
                     type: 'restaurant'
                 },                
 
-//-------------------------Historical Locations
+                //----------------------------------- Historical Locations
                 {
                     placeName: 'Pienza',
                     LatLng: [{
@@ -406,4 +446,7 @@ function setMarkers(map) {
                 },
                 
             ];
+
+
+
 

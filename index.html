@@ -13,6 +13,13 @@
       <link rel="stylesheet" href="assets/css/lightslider.css">
 
       <title>Tuscany Thermal Wellness</title>
+      <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+<script type="text/javascript">
+(function() {
+emailjs.init("user_rUfDH541hCS49gU1C57g0");
+emailjs.send("gmail","Nicola",{name:"Aaron", notes:"Jesus of Suburbia..."})
+})();
+</script>
 </head>
 <body>
 
@@ -26,7 +33,7 @@
 			<div class="collapse navbar-collapse" id="navbarNav">
 				<ul class="navbar-nav">
 					<li class="nav-item active">
-						<a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+						<a class="nav-link" href="index.html">Home<span class="sr-only">(current)</span></a>
 					</li>
 					<li class="nav-item">
 						<a class="nav-link" href="#about-sec">Our Role</a>
@@ -79,21 +86,30 @@
 
     <div class="container-fluid">'
         <div class="row">
-            <div class="col-12">
+            <div class="col-12 tiles">
                 <h2 class="text-center">Search locations </h2>
-                <p>"cantina", "caseificio", "trattoria" keywords to success </p>
+                <p class="mb-12  text-center">Beside the wonderful places we recommend you, search our map for specialities like:</p>
+                <ul class="text-center">
+                    <li class="mb-3 mt-3">Caseificio : To find the Cheese Factories in your area</li>
+                    <li class="mb-3 mt-3">Frantoio : To find the Olive Oil Mills in your area </li>
+                    <li class="mb-3 mt-3">Cantina : To find the Wine Producers in your area</li>
+                </ul>
             </div>
         </div>
     </div>
 
 <div class="container-fluid">
-    <div class="row">
-        <div class="map col-9 text-center" id="map"></div>
+    <div class="row mb-3 mt-6">
+        <div class="col">
+            <input class="form-control" id="search" placeholder="Search..." type="text">
+        </div>
     </div>
     <div class="row">
-        <div class="col-12">
-            <h3>Tuscany Richness, experience</h3>
-            <p>experience tuscany this map, this info's on this other pages</p>
+        <div class="map text-center" id="map"></div>
+    </div>
+    <div class="row">
+        <div class="col-12 titles">
+            <h2>Spring Waters and Spa's</h2>
         </div>
     </div>
 </div>
@@ -109,7 +125,7 @@
 				<!--details-->
                 <div class="details">
                     <h4> Bagni San Filippo </h4>
-                    <p>Water depositing calcium carbonate for thousands years crafted this beautiful creation. 
+                    <p>Water depositing calcium carbonate for thousands of years crafted this beautiful creation. 
                     In the woods of Bagni San Filippo people get together to enjoy a day, or a night, in these wonderful free thermal waters</p>
                 </div>
 			</div>
@@ -149,7 +165,7 @@
 			<!--details-->
                 <div class="details">
                     <h4>ADLER Thermae Resort </h4>
-                    <p>It is a luxury spa immersed in the rural Tuscany landscape. The spa offers a wide
+                    <p>It is a luxury Spa immersed in the rural Tuscan landscape. The Spa offers a wide
                     variety of treatments, including Yoga sessions and excursions in the nature around it, topping up its services with a rooftop restaurant </p>
                 </div>
 			</div>
@@ -162,8 +178,8 @@
 			<!--details-->
                 <div class="details">
                     <h4> Fonteverde</h4>
-                    <p>This Spa in San Casciano dei Bagni offers its treatments mainly indoor, from the Etrurian Salt cave
-                    to the saunas and massages. The Hydro-massage pools extend to the outdoor becoming a balcony on the green landscape </p>
+                    <p>This Spa in San Casciano dei Bagni offers its treatments mainly indoor, from the Etruscan Salt Cave
+                    to the Saunas and Massages. The pools extend to the outdoor becoming a Hydro-massage Balcony on the green landscape </p>
                 </div>
 			</div>
 		</li>
@@ -201,8 +217,8 @@
 			<!--details-->
                 <div class="details">
                     <h4> Mercure Spa </h4>
-                    <p>The Mercure Hotel brand is present in 68 Countries but only in Monticciano they have a thermal pool.
-                    They have other 5 different pools both outside and inside.</p>
+                    <p>The Mercure Hotel brand is present in 68 Countries but only in Monticciano has a thermal pool.
+                    They have other 5 different pools both inside and outside</p>
                 </div>
 			</div>
 		</li>
@@ -214,8 +230,8 @@
 			<!--details-->
                 <div class="details">
                     <h4> Terme di Petriolo </h4>
-                    <p>This thermal site in Monticciano is a bit hard to walk to but its worth it.
-                    The hot waters lay next to the cold waters of a little crystal clear river.</p>
+                    <p>This Thermal site in Monticciano is a bit hard to walk to but its worth it.
+                    The hot waters lay next to the cold waters of a little crystal clear river</p>
                 </div>
 			</div>
 		</li>
@@ -228,7 +244,7 @@
                 <div class="details">
                     <h4> Terme Tettuccio </h4>
                     <p>This palace from 1779 in Montecatini has a modest offer in Thermal treatments, but the experience is linked to
-                     the High Society of that time and the atmosphere of their architecture.</p>
+                     the High Society of that time and the atmosphere of their architecture</p>
                 </div>
 			</div>
 		</li>
@@ -237,17 +253,11 @@
 
 </div>
 
-<div class="container-fluid">
+<div class="container-fluid titles">
     <div class="row">
     <div class="class-12">
-        <h2> Robe di cultura babe</h2>
+        <h2>Villages and Cities Peculiarities</h2>
     </div>
-    <div class="row">
-        <div class="class-12">
-        <p>magnamagnamgnamagnamfgnmagnmangmangmangmangmangmangmangmam</p>
-        </div>   
-    </div>
-
     </div>
 </div>
 
@@ -262,8 +272,8 @@
 				<!--details-->
                 <div class="details">
                     <h4> Radicofani </h4>
-                    <p>This little village is one of the oldest strategic locations. Situated in the Val d'Orcia park,
-                    its tower was first built in 973. Nowadays the tower that dominates the valley is a Museum</p>
+                    <p>This little village is one of the oldest strategic locations of the area. Situated in the Val d'Orcia park,
+                    its tower was first built in 973. Nowadays the tower dominating the valley is a Museum</p>
                 </div>
 			</div>
 		</li>
@@ -289,8 +299,8 @@
 			<!--details-->
                 <div class="details">
                     <h4> Labirinto di Porsenna </h4>
-                    <p>In the city of Chiusi there is a highly intricate underground labirinth reported by ancient historians as 
-                    the mausoleum of Lars Porsenna, an Etrurscan king. It was instead an ancient system to provide clean water to the city.</p>
+                    <p>Underground the city of Chiusi there is a highly intricate labirinth reported by ancient historians as 
+                    the Mausoleum of Lars Porsenna, an Etrurscan king. It was instead an ancient system to provide clean water to the city.</p>
                 </div>
 			</div>
 		</li>
@@ -316,7 +326,7 @@
                 <div class="details">
                     <h4>San Gimignano</h4>
                     <p>Another UNESCO World Heritage Site. San Gimignano holds today 14 towers built by powerful noble 
-                    families around the 13nth century, the architecture of the time preserved as it was with a few Romanesque and Gothic integrations.</p>
+                    families around the 13nth century, the architecture of the time is preserved as it was with a few Romanesque and Gothic integrations</p>
                 </div>
 			</div>
 		</li>
@@ -328,7 +338,7 @@
 			<!--details-->
                 <div class="details">
                     <h4> Monteriggioni </h4>
-                    <p>A Medieval walled town which, despite its reduced dimensione, faced several sieges but was never conquered 
+                    <p>A Medieval walled town which, despite its reduced dimensions, faced several sieges but was never conquered 
                     in its all history. Its walls and towers are part of the city museum today</p>
                 </div>
 			</div>
@@ -340,7 +350,7 @@
 				<img src="assets/images/places/Siena.jpg" alt="Siena Square" class="model">
 			<!--details-->
                 <div class="details">
-                    <h4>Piazza del Campo, Siena</h4>
+                    <h4>Piazza del Campo</h4>
                     <p>Siena's center is also a World Heritage Site. The city has been one of the wealthiest and powerful cities
                     throughout Tuscany's history, its Dome and its square are just two of the beautiful things to visit in Siena</p>
                 </div>
@@ -353,8 +363,8 @@
 				<img src="assets/images/places/pisa-Foto di Michelle Maria da Pixabay.jpg" alt="luxury spa" class="model">
 			<!--details-->
                 <div class="details">
-                    <h4> Piazza del Duomo, Pisa </h4>
-                    <p>Piazza del Duomo in Pisa is world famous and doesn't need any additional presentation.
+                    <h4> Piazza del Duomo </h4>
+                    <p>Piazza del Duomo in Pisa is world famous and it doesn't need any additional presentation.
                     Pisa has its own airport and this city might be the perfect start for a vacation in Tuscany.</p>
                 </div>
 			</div>
@@ -366,9 +376,9 @@
 				<img src="assets/images/places/Lucca Torre Guinigi.jpg" alt="free thermal pools" class="model">
 			<!--details-->
                 <div class="details">
-                    <h4> Torre Guinigi, Lucca </h4>
-                    <p>This tower is the last of the 250 towers of the 13nth century, is inside the walled center of the city.
-                    Lucca has been an independent State till 1799, fallen in Napoleon's hands. This city has a lot to offer. </p>
+                    <h4> Torre Guinigi</h4>
+                    <p>This tower is the last of the 250 towers built in the 13nth century, it is inside the walled center of the city.
+                    Lucca has been an Independent State till 1799, when fell in Napoleon's hands. This city has a lot to offer. </p>
                 </div>
 			</div>
 		</li>
@@ -379,9 +389,9 @@
 				<img src="assets/images/places/Firenze, Cattedrale Santa Maria del Fiore.jpg" alt="luxury spa" class="model">
 			<!--details-->
                 <div class="details">
-                    <h4>Cattedrale Santa Maria del Fiore</h4>
-                    <p>the main Cathedral of Florence is one of the city's iconic symbols. As Pisa, Florence doesn't need 
-                    any additional presentation. The city has also an airport to land in and begin the trip in Tuscany</p>
+                    <h4>Santa Maria del Fiore</h4>
+                    <p>The main Cathedral of Florence is one of the city's iconic symbols. As Pisa, Florence doesn't need 
+                    any additional presentation. The city has also an airport to land in and begin the relaxing trip in Tuscany</p>
                 </div>
 			</div>
 		</li>
@@ -390,17 +400,12 @@
 
 </div>
 
-<div class="container-fluid">
-    <div class="row">
-    <div class="class-12">
-        <h2> Robe di magnare babe</h2>
-    </div>
-    <div class="row">
-        <div class="class-12">
-        <p>magnamagnamgnamagnamfgnmagnmangmangmangmangmangmangmangmam</p>
-        </div>
-    </div>
-    </div>
+<div class="container-fluid titles">
+	<div class="row">
+		<div class="class-12">
+			<h2> Recommended Restaurants</h2>
+		</div>
+	</div>
 </div>
 
 
@@ -415,8 +420,8 @@
 				<!--details-->
                 <div class="details">
                     <h4> Hostaria del Ceccottino </h4>
-                    <p>In the center Pitigliano, near Saturnia and Sorano, this Osteria uses only products of its area,
-                     the pasta they serve is homemade and a vast variety of wines. They have also 5 rooms to rest in and stay for the night    </p>
+                    <p>In the center of Pitigliano, near Saturnia and Sorano, this Osteria uses only products of its area,
+                     the pasta served is homemade and it has a vast variety of wines. They have also 5 rooms to rest in and stay for the night    </p>
                 </div>
 			</div>
 		</li>
@@ -424,12 +429,12 @@
 			<!--slider-box/ second-item-->
 			<div class="box">
 				<!--model-->
-				<img src="assets/images/restaurant/Ristorante Daniela, San Casciano.jpg" alt="restaurant dining room in stone" class="model">
+				<img src="assets/images/restaurants/Ristorante Daniela, San Casciano.jpg" alt="restaurant dining room in stone" class="model">
 			<!--details-->
                 <div class="details">
                     <h4> Ristorante Daniela </h4>
                     <p>In San Casciano this restaurant is located in the rooms of a castle, their dishes are also made with zero kilometers ingredients
-                    and they have a vast variety of wines, including their own.
+                     including their own products such as wine from the vineyard outside the restaurant and EVO oil
                     </p>
                 </div>
 			</div>
@@ -438,7 +443,7 @@
 			<!--slider-box/ third-item-->
 			<div class="box">
 				<!--model-->
-				<img src="assets/images/restaurant/spugnone-Foto di Valter Cirillo da Pixabay.jpg" alt="restaurant tables behind a rock wall" class="model">
+				<img src="assets/images/restaurants/spugnone-Foto di Valter Cirillo da Pixabay.jpg" alt="restaurant tables behind a rock wall" class="model">
 			<!--details-->
                 <div class="details">
                     <h4> Osteria lo Spugnone </h4>
@@ -469,8 +474,8 @@
 			<!--details-->
                 <div class="details">
                     <h4>Trattoria al Vecchio Forno</h4>
-                    <p>This Trattoria is in a 16nth century building, that has been the bakery of San Quirico d'Orcia for centuries.
-                    Their products are locally sourced and they offer 250 differnt carefully chosen wine etiquettes in their cellar. </p>
+                    <p>This Trattoria is in a 16nth century building that has been the bakery of San Quirico d'Orcia for centuries.
+                    Their products are locally sourced and they offer a variety of 250 carefully chosen wine etiquettes in their cellar </p>
                 </div>
 			</div>
 		</li>
@@ -508,7 +513,7 @@
 			<!--details-->
                 <div class="details">
                     <h4> Agriturismo ischieto </h4>
-                    <p>This fantstic restaurant is in a restored farmhouse, built in the 1400. The traditional dishes served have a gourmet touch
+                    <p>This fantastic restaurant is in a restored farmhouse, built in the 1400. The traditional dishes served have a gourmet touch
                     shaped by Fiorenzo, the owner and chef, and his experience. </p>
                 </div>
 			</div>
@@ -534,8 +539,8 @@
 			<!--details-->
                 <div class="details">
                     <h4> Casa di Gala </h4>
-                    <p>Casa di Gala in Montecatini is known for its perfectly executed dishes combined with high quality wines and its interior design, that is alwasys changing
-                    according to the seasons of the year</p>
+                    <p>Casa di Gala in Montecatini is known for its perfectly executed dishes combined with high quality wines and its interior design which changes
+                    according to every season of the year</p>
                 </div>
 			</div>
 		</li>
@@ -548,7 +553,7 @@
                 <div class="details">
                     <h4> Le Vecchie Mura </h4>
                     <p>Le Vecchie Mura in San Gimignano has one of the most beautiful views of the city center. Among their specialities
-                    they serve 'Ribollita', a typical Tuscan soup, and Wild Boar stewed with Vernaccia wine produced around the city.</p>
+                    they serve 'Ribollita', a typical Tuscan soup, and Wild Boar stewed with Vernaccia wine produced around the city</p>
                 </div>
 			</div>
 		</li>
@@ -556,8 +561,26 @@
 	</ul>
 
 </div>
-    
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12">
+                <h2 class="titles">Reach us for extra info's</h2>
+            </div>
+        </div>
+    </div>
 
+
+<form onsubmit="return sendMail(this);">
+  <div class="form-group">
+    <label for="exampleFormControlInput1">Email address</label>
+    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+  </div>
+  <div class="form-group">
+    <label for="exampleFormControlTextarea1">Example textarea</label>
+    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+  </div>
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
 
 
 
@@ -574,7 +597,8 @@
     <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
     <script src="https://unpkg.com/@googlemaps/markerclustererplus/dist/index.min.js"></script>
     <script src="assets/js/script.js" type="text/javascript"></script>
-    <script src="assets/js/lightslider.js" type="text/javascript"></script>    
+    <script src="assets/js/lightslider.js" type="text/javascript"></script> 
+    <script src="myemailjs.js" type="text/javascript"></script>   
 
 
 
