@@ -14,47 +14,64 @@
                  map = new google.maps.Map(document.getElementById('map'), {
                     zoom: 8,
                     center: centerCords
-                });
+                 });
                 setMarkers(map);
 
  //---------------- Search Box from Google Docs and the Develop Mindfully Tutorial and Michelle Clement
-            var input = document.getElementById("search");
-            var searchBox = new google.maps.places.SearchBox(input);
+            const input = document.getElementById("search");
 
-            map.addListener("bounds_changed", function () {
+            const searchBox = new google.maps.places.SearchBox(input);
+
+            map.addListener("bounds_changed", () => {
                 searchBox.setBounds(map.getBounds());
             });
 
-            var markersSearched = [];
+            let markersSearched = [];
 
-            searchBox.addListener("places_changed", function () {
-                var places = searchBox.getPlaces();
+            searchBox.addListener("places_changed", () => {
+                
+                const places = searchBox.getPlaces();
 
-                if (places.length == 0) return;
+                if (places.length == 0) {
+                    return;
+                } 
 
-                markersSearched.forEach(function (m) {
+                markersSearched.forEach( (m) => {
                 m.setMap(null);
                 });
                 var markersSearched = [];
                 
 
-                var bounds = new google.maps.LatLngBounds();
+                const bounds = new google.maps.LatLngBounds();
 
-                places.forEach(function (p) {
-                if (!p.geometry) return;
+                places.forEach( (p) => {
+                if (!p.geometry) {
+                    return;
+                } 
 
+                const icond = {
+                    url: place.icond,
+                    size: new google.maps.Size(71, 71),
+                    origin: new google.maps.Point(0, 0),
+                    anchor: new google.maps.Point(17, 34),
+                    scaledSize: new google.maps.Size(25, 25),
+                };
+            
                 markersSearched.push(
                     new google.maps.Marker({
                     map: map,
                     title: p.name,
+                    icond,
                     position: p.geometry.location,
                     })
                 );
 
-                if (p.geometry.viewport) 
-                    bounds.union(p.geometry.viewport);
-                else 
-                bounds.extend(p.geometry.location);
+                if (p.geometry.viewport) {
+                  bounds.union(p.geometry.viewport);
+                } else {
+                    bounds.extend(p.geometry.location);
+                }
+                
                 });
 
                 map.fitBounds(bounds);

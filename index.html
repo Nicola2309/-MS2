@@ -12,14 +12,14 @@
       <link rel="stylesheet" href="assets/css/style.css">
       <link rel="stylesheet" href="assets/css/lightslider.css">
 
-      <title>Tuscany Thermal Wellness</title>
       <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
-<script type="text/javascript">
-(function() {
-emailjs.init("user_rUfDH541hCS49gU1C57g0");
-emailjs.send("gmail","Nicola",{name:"Aaron", notes:"Jesus of Suburbia..."})
-})();
-</script>
+    <script type="text/javascript">
+        (function() {
+        emailjs.init("user_rUfDH541hCS49gU1C57g0");
+        })();
+    </script>
+    <script src="assets/js/myemailjs.js" type="text/javascript"></script>
+      <title>Tuscany Thermal Wellness</title>
 </head>
 <body>
 
@@ -32,23 +32,17 @@ emailjs.send("gmail","Nicola",{name:"Aaron", notes:"Jesus of Suburbia..."})
 
 			<div class="collapse navbar-collapse" id="navbarNav">
 				<ul class="navbar-nav">
-					<li class="nav-item active">
-						<a class="nav-link" href="index.html">Home<span class="sr-only">(current)</span></a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#about-sec">Our Role</a>
-					</li>
 					<li class="nav-item">
 						<a class="nav-link" href="#hot-sec">Hot Pools</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="#">Local Meals</a>
+						<a class="nav-link" href="#local">Local Meals</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="#">Historical Interest</a>
+						<a class="nav-link" href="#hinterest">Historical Interest</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="#">Contact Us</a>
+						<a class="nav-link" href="#contact">Contact Us</a>
 					</li>
 				</ul>
 			</div>
@@ -63,47 +57,48 @@ emailjs.send("gmail","Nicola",{name:"Aaron", notes:"Jesus of Suburbia..."})
 
     <div class="container-fluid" style="background-color: rgba(0, 0, 0, 0.1);">
         <div class="row">
-            <div class="col-md-4 croppy">
+            <div class="col-md-4 col-sm-12 croppy">
                 <a href="#pools">
-                    <img style="margin-left: 12px;" src="assets/images/Foto di Free-Photos da Pixabay.jpg" alt="">
+                    <img  src="assets/images/Foto di Free-Photos da Pixabay.jpg" alt="">
                     <div class="centered">Enjoy</div>
                 </a>
             </div>           
-            <div class="col-md-4 croppy">
+            <div class="col-md-4  col-sm-12 croppy">
                 <a href="#history">
-                    <img style="margin-left: 12px;" src="assets/images/Foto di Walkerssk da Pixabay-res.jpg" alt="">
+                    <img  src="assets/images/Foto di Walkerssk da Pixabay-res.jpg" alt="">
                     <div class="centered">Visit</div>
                 </a>
             </div>           
-            <div class="col-md-4 croppy">
+            <div class="col-md-4  col-sm-12 croppy">
                 <a href="#food">
-                    <img style="margin-left: 12px;" src="assets/images/pexels-elina-sazonova-dinnertje.jpg" alt="">
+                    <img src="assets/images/pexels-elina-sazonova-dinnertje.jpg" alt="">
                     <div class="centered">Taste</div>
                 </a>
             </div>
         </div>
     </div>
 
-    <div class="container-fluid">'
+    <div class="container-fluid">
         <div class="row">
-            <div class="col-12 tiles">
+            <div class="col-12 titles">
                 <h2 class="text-center">Search locations </h2>
-                <p class="mb-12  text-center">Beside the wonderful places we recommend you, search our map for specialities like:</p>
-                <ul class="text-center">
-                    <li class="mb-3 mt-3">Caseificio : To find the Cheese Factories in your area</li>
-                    <li class="mb-3 mt-3">Frantoio : To find the Olive Oil Mills in your area </li>
-                    <li class="mb-3 mt-3">Cantina : To find the Wine Producers in your area</li>
-                </ul>
+                <p class="mb-12  text-center pad">Beside the wonderful places we recommend you, search our map for specialities like:</p>
+              
+                    <p class="mb-3 mt-3 text-center">Caseificio : To find the Cheese Factories in your area</p>
+                    <p class="mb-3 mt-3 text-center">Frantoio : To find the Olive Oil Mills in your area </p>
+                    <p class="mb-3 mt-3 text-center">Cantina : To find the Wine Producers in your area</p>
             </div>
         </div>
     </div>
 
+
+
 <div class="container-fluid">
-    <div class="row mb-3 mt-6">
-        <div class="col">
-            <input class="form-control" id="search" placeholder="Search..." type="text">
-        </div>
-    </div>
+<div class="ro mb-2">
+ <div class="col">
+     <input class="form-control" id="search" placeholder="Search..." type="text">
+ </div>
+</div>
     <div class="row">
         <div class="map text-center" id="map"></div>
     </div>
@@ -222,7 +217,7 @@ emailjs.send("gmail","Nicola",{name:"Aaron", notes:"Jesus of Suburbia..."})
                 </div>
 			</div>
 		</li>
-        		<li class="item-a">
+        <li class="item-a">
 			<!--slider-box/ nineth-item-->
 			<div class="box">
 				<!--model-->
@@ -235,7 +230,7 @@ emailjs.send("gmail","Nicola",{name:"Aaron", notes:"Jesus of Suburbia..."})
                 </div>
 			</div>
 		</li>
-                		<li class="item-a">
+        <li class="item-a">
 			<!--slider-box/ nineth-item-->
 			<div class="box">
 				<!--model-->
@@ -569,20 +564,21 @@ emailjs.send("gmail","Nicola",{name:"Aaron", notes:"Jesus of Suburbia..."})
         </div>
     </div>
 
-
-<form onsubmit="return sendMail(this);">
-  <div class="form-group">
-    <label for="exampleFormControlInput1">Email address</label>
-    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
-  </div>
-  <div class="form-group">
-    <label for="exampleFormControlTextarea1">Example textarea</label>
-    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-  </div>
-  <button type="submit" class="btn btn-primary">Submit</button>
-</form>
-
-
+<div class="center-form">
+	<form onsubmit="return sendMail(this);">
+		<div class="form-group">
+			<label for="name">Name</label>
+			<input type="name" name="name" class="form-control" id="name" placeholder="Name" required>
+			<label for="email">Email address</label>
+			<input type="email" name="email" class="form-control" id="email" placeholder="name@example.com" required>
+        </div>
+			<div class="form-group">
+				<label for="info">Ask us anything</label>
+				<textarea class="form-control" name="info" id="info" rows="4" required></textarea>
+			</div>
+			<button type="submit" class="btn btn-primary">Submit</button>
+	</form>
+</div>
 
 <footer>
 </footer>
@@ -591,14 +587,21 @@ emailjs.send("gmail","Nicola",{name:"Aaron", notes:"Jesus of Suburbia..."})
 
     <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
     <script src="assets/js/maps.js" type="text/javascript"></script>
-    <script async defer
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCVLFpOteRAja24BTRfyj6NVm8KjcqcNJs&callback=initMap">
-    </script>
     <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
-    <script src="https://unpkg.com/@googlemaps/markerclustererplus/dist/index.min.js"></script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCVLFpOteRAja24BTRfyj6NVm8KjcqcNJs&callback=initMap&libraries=places&v=weekly">
+    </script>
+    <script src="https://unpkg.com/@googlemaps/markerclustererplus/dist/index.min.js"></script>   
     <script src="assets/js/script.js" type="text/javascript"></script>
     <script src="assets/js/lightslider.js" type="text/javascript"></script> 
-    <script src="myemailjs.js" type="text/javascript"></script>   
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+        emailjs.init("user_rUfDH541hCS49gU1C57g0");
+        })();
+    </script>
+    <script src="assets/js/myemailjs.js" type="text/javascript"></script>
+
 
 
 
