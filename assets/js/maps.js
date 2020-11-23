@@ -26,7 +26,7 @@
                 searchBox.setBounds(map.getBounds());
             });
 
-            let markersSearched = [];
+            var markersSearched = [];
 
             searchBox.addListener("places_changed", () => {
                 
@@ -38,8 +38,9 @@
 
                 markersSearched.forEach( (m) => {
                 m.setMap(null);
-                });
                 var markersSearched = [];
+
+                });
                 
 
                 const bounds = new google.maps.LatLngBounds();
@@ -50,7 +51,7 @@
                 } 
 
                 const icond = {
-                    url: place.icond,
+                    url: 'http://maps.google.com/mapfiles/kml/paddle/red-circle.png',
                     size: new google.maps.Size(71, 71),
                     origin: new google.maps.Point(0, 0),
                     anchor: new google.maps.Point(17, 34),
@@ -61,7 +62,7 @@
                     new google.maps.Marker({
                     map: map,
                     title: p.name,
-                    icond,
+                    icon: icond,
                     position: p.geometry.location,
                     })
                 );
@@ -129,7 +130,8 @@ function setMarkers(map) {
 
     
     for (let i = 0; i < markersOnMap.length; i++) {
-        let  contentString = '<h5>'+ markersOnMap[i].placeName + '<h5>';
+        let  contentString = ['<h5>'+ markersOnMap[i].placeName + '<h5>',
+                              '<p>'+ 5 +'<p>',]
 
         const marker = new google.maps.Marker({
             position: markersOnMap[i].LatLng[0],
@@ -157,6 +159,7 @@ function setMarkers(map) {
                 //----------------------------------- Hot Waters Locations
                 {
                     placeName: 'Terme di Sorano Residence',
+                    pic : '',
                     LatLng: [{
                         lat: 42.660515, 
                         lng: 11.720263
