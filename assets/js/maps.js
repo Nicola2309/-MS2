@@ -280,16 +280,9 @@ function setMarkers(map) {
                 },
 
                 //----------------------------------- Restaurant Locations
+
                 {
-                    placeName: 'ROSSO VIVO Shop e Food Experience | Pizzeria, Chianciano',
-                    LatLng: [{
-                        lat: 43.048779, 
-                        lng: 11.818946
-                    }],
-                    type: 'restaurant'
-                },
-                {
-                    placeName: 'Ristorante Trattoria Toscana Al Vecchio Forno, San Quirico D Orcia',
+                    placeName: 'Al Vecchio Forno, San Quirico D Orcia',
                     LatLng: [{
                         lat: 43.059829, 
                         lng: 11.604703
