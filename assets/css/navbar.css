@@ -12,12 +12,11 @@ h5  {
     font-family: 'Cormorant SC', serif;
 }
 
-
-#company-logo{
-    height: 132px;
-    width: 120px;
+.navbar-brand img{
+    margin-top: -9px;
+    width:139px;
+    margin-left: 21px;
     text-align: center;
-    margin-left: 6px;
 }
 
 a {
@@ -34,62 +33,47 @@ a {
 }
 
 
-.nav-item > li{
-  list-style-type: none;
-  margin-bottom: 18px;
-  text-align: left;
-}
-
-.nav-item > li:hover{
-  cursor: pointer;
-  transform: scale(1.1);
-}
-
 
 /*---------------------------------Media Queries*/
 
+@media screen and (max-width:1024px ){
+
+  .nav-brand{
+     text-align: center;
+     padding-left: 20px
+  }
+
+  .navbar-nav{
+      margin-top: 21px;
+  }
+
+.nav-link{
+    margin-right:21px;
+}
+}
+
+@media screen and (max-width:768px) {
+    .navbar-brand img{
+        margin-left: -12px;
+    }
+}
+
 @media screen and (max-width:767px) {
-  #company-logo {
+  .navbard-brand img {
       width: 112px !important;
       height: auto;
   }
 
-  .nav-item {
-      font-size: initial;
-      justify-content: none;
-  }
 
-  .nav-brand{
+  .navbar-brand{
      text-align: center;
      padding-left: 20px
   }
 
-  #tus-pic{
-      width: 100%;
-  }
-
-  #map{
-      width: 90% !important;
-      height: 450px !important;
-  }
 }
+@media screen and (max-width: 540px){
 
-
-@media screen and (max-width:1024px ){
-  #company-logo{
-      width: 180px;
-      height: auto;
-  }
-  
-  .nav-item > li{
-    list-style-type: none;
-    margin-bottom: 15px;
-    text-align: center;
-  }
-
-  .nav-brand{
-     text-align: center;
-     padding-left: 20px
-  }
-
+.navbar-brand img {
+    margin-left: -27px;
+}
 }

@@ -3,10 +3,6 @@
     margin: 15px auto;
 }
 
-.navbar-brand img{
-    width:139px;
-    margin-left: 21px;
-}
 .jumbotron{
     margin:0;
     /*Foto di nathanfav da Pixabay */
@@ -31,11 +27,6 @@
     font-size: 1.2em;
 }
 
-.row img{
-    margin: 10px;
-    text-align: center;
-}
-
 .croppy img{
     margin-top: 18px;
     height: 81%;
@@ -51,13 +42,26 @@
     transform: translate(-50%, -50%);
 }
 
-.pad{
-    padding:0;
+.spotto{
+    font-size: 3.4em;
+    margin-top: 72px;
+    margin-bottom: 36px;
+}
+
+.em p{
+    padding: 0 10px;
+    font-size: 1.3em;
+    margin-top: 42px;
+}
+
+.spot{
+    font-size: 3.4em;
+    margin: 72px 0;
 }
 
 .form-control{
     margin: 30px auto;
-    width: 50%;
+    width: 65%;
 }
 
 #map{
@@ -70,10 +74,27 @@
      margin: 0;
 }
 
-.titles{
-    margin: 81px 0;
+/*-----------------------Icon Styling*/
+
+.fas{
+    margin-right: 21px;
+    font-size: 1.5em;
 }
 
+.fas:hover{
+    font-size: 1.6em;
+}
+.fa-cheese{
+    color: orange;
+}
+
+.fa-seedling{
+    color: green;
+}
+
+.fa-glass-cheers{
+color: red;
+}
 
 /*-------------------------Carousel styling, Going-To Internet tutorial, link in README*/
 ul{
@@ -93,10 +114,9 @@ a{
 }
 
 .box{
-    width: 300px;
+    width: 310px;
     height: 210px;
     border-radius: 10px;
-    /*display: flex;*/
     flex-direction: column;
     align-items:center;
     justify-content: space-between;
@@ -105,7 +125,7 @@ a{
 }
 
 .model{
-    width: 300px;
+    width: 310px;
     height: 210px;
 }
 
@@ -123,6 +143,7 @@ a{
     font-size: 12px;
     color: #6a6a74;
     text-align: center;
+    padding-right: 27px;
 }
 
 .autoWidth{
@@ -135,6 +156,80 @@ a{
     transition: all ease 0.3s;
 }
 
+.lSAction > a{
+    opacity: 1;
+}
+
+/*---------------------------------Form button*/
+
+.btn-primary {
+    color: #fff;
+    background-color: blue;
+    border-color: blue;
+    font-family: 'Cormorant SC';
+    font-size: x-large;
+}
+/*---------------------------------Footer*/
+.footer{
+    margin-top: 36px;
+    background-color: rgba(0 ,0 ,0 , 0.1);
+}
+
+#foot-logo{
+    width: 100px;
+    margin-top: 15px;
+}
+
+.socially{
+    justify-content: center;
+    margin-top: 7%;
+    display: flex;
+}
+
+#foot-p{
+    margin-top: 18%;
+    margin-bottom: 3%;
+}
+
+.fab {
+    font-size: 1.4em;
+    color:blue;
+    margin-right: 5px;
+    margin-left: 5px;
+}
+
+.fab:hover{
+    color: white;
+}
+
+/*---------------------------------Bring-User-To-Top Button*/
+
+#myBtn {
+  margin: 0;
+  display: none;
+  position: fixed;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: rgb(72, 193, 239);
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+#myBtn:hover {
+  background-color: #555;
+}
+
+.fas.fa-angle-double-up{
+    margin: -6px 8px;
+    display: block;
+    font-size: 2em;
+}
+
 /*---------------------------------Media Queries*/
 
 @media screen and ( min-width:1025px){
@@ -142,6 +237,12 @@ a{
     position: relative;
     margin-top: 17%;
 }
+
+#myBtn{
+    bottom: 170px;
+    right: 21px;
+}
+
 }
 
 @media screen and ( max-width:1024px){
@@ -149,15 +250,22 @@ a{
     position: relative;
     margin-top: 27%;
 }
+#myBtn{
+    bottom: 132px;
+    right: 21px;
 }
 
-@media screen and ( max-width:768px){
-    .container-fluid{
-        padding-right: 0;
-    }   
+}
+
+
+@media screen and ( max-width:768px){ 
     #call-me{
     position: relative;
     margin-top: 34%;
+}
+
+.form-control{
+    width: 75%;
 }
 }
 
@@ -172,21 +280,75 @@ a{
     #call-me{
     position: relative;
     margin-top: 63%;
+
+}
+
+.jumbotron
+{
+    background-position-x: center;
 }
 
 .form-control{
-    width: 70%;
+    width: 100%;
+}
+
+#map{
+    width: 90% !important;
+    height: 450px !important;
+}
+
+
+.width{
+    width: 50%;
+}
+
+.socially {
+    justify-content: flex-end;
+    margin-top: 4%;
+    margin-bottom: 3%;
+    display: flex;
+}
+
+#foot-p{
+    display: none;
+}
+
+#myBtn{
+    bottom: 5px;
 }
 
 }
 
-@media screen and ( max-width:414px){
+@media screen and ( max-width: 416px){
     #call-me{
     position: relative;
     margin-top: 75%;
 }
+
+.spot{
+    font-size: 3em;
+    margin: 72px 0;
 }
 
+
+.details,
+.details p,
+.box,
+.model    {
+    width: 372px;;
+    height: 210px;
+}
+
+.fas {
+    margin: 30px 0 12px 0;
+    display: block;
+    font-size: 1.5em;
+}
+
+.lSSlideOuter .lSPager.lSpg li a{
+    margin: auto 9px;
+}
+}
 
 
 @media screen and ( max-width:375px) {
@@ -203,21 +365,58 @@ a{
     padding:0;
 }
 
-.details p{
-    padding: 0 21px;
+.details,
+.details p,
+.box,
+.model    {
+    width: 375px;
+}
+
+}
+
+@media screen and ( max-width:360px) {
+.details,
+.details p,
+.box,
+.model    {
+    width: 280px;
+    margin-left: 21px;
+}
+
+.lSSlideOuter .lSPager.lSpg > li{
+    margin-left: -12px;
+}
+}
+
+
+@media screen and ( max-width:320px) {
+
+.spot{
+    font-size: 2.4em;
+    margin: 72px 0;
+}
+
+.col-12{
+    padding: 0;
 }
 
 .details,
 .details p,
 .box,
 .model    {
-    width: 280px;
+    margin-left: 4px;
 }
 
+.width{
+    padding: 0;
 }
 
-
-
+.socially {
+    justify-content: center;
+    margin-top: 9%;
+    display: flex;
+}
+}
 
 
 

@@ -13,18 +13,13 @@
       <link rel="stylesheet" href="assets/css/lightslider.css">
 
       <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
-    <script type="text/javascript">
-        (function() {
-        emailjs.init("user_rUfDH541hCS49gU1C57g0");
-        })();
-    </script>
-    <script src="assets/js/myemailjs.js" type="text/javascript"></script>
       <title>Tuscany Thermal Wellness</title>
+      <!--Eliminata emailjs cdn e script dall'header. troubleshoot se funziona da fine body-->
 </head>
 <body>
 
 	<nav class="navbar navbar-expand-lg navbar-light bg-light">
-		<a class="navbar-brand" href="index.html"><img src="assets/images/logo.png" alt="company logo"></a>
+		<a class="navbar-brand" href="index.html"><img src="assets/images/logo.png" alt="company logo" id="com-logo"></a>
 
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
 	                        <span class="navbar-toggler-icon"></span>
@@ -33,13 +28,13 @@
 			<div class="collapse navbar-collapse" id="navbarNav">
 				<ul class="navbar-nav">
 					<li class="nav-item">
-						<a class="nav-link" href="#hot-sec">Hot Pools</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#local">Local Meals</a>
+						<a class="nav-link" href="#pools">Hot Pools</a>
 					</li>
 					<li class="nav-item">
 						<a class="nav-link" href="#hinterest">Historical Interest</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#local">Local Meals</a>
 					</li>
 					<li class="nav-item">
 						<a class="nav-link" href="#contact">Contact Us</a>
@@ -64,13 +59,13 @@
                 </a>
             </div>           
             <div class="col-md-4  col-sm-12 croppy">
-                <a href="#history">
+                <a href="#hinterest">
                     <img  src="assets/images/Foto di Walkerssk da Pixabay-res.jpg" alt="">
                     <div class="centered">Visit</div>
                 </a>
             </div>           
             <div class="col-md-4  col-sm-12 croppy">
-                <a href="#food">
+                <a href="#local">
                     <img src="assets/images/pexels-elina-sazonova-dinnertje.jpg" alt="">
                     <div class="centered">Taste</div>
                 </a>
@@ -80,13 +75,15 @@
 
     <div class="container-fluid">
         <div class="row">
-            <div class="col-12 titles">
-                <h2 class="text-center">Search locations </h2>
-                <p class="mb-12  text-center pad">Beside the wonderful places we recommend you, search our map for specialities like:</p>
+            <div class="col-12">
+                <h2 class="text-center spotto">Search For More... </h2>
+            </div>
+            <div class="col-12 em">
+                <p class="text-center">Beside the wonderful places we recommend you, search our map for specialities like:</p>
               
-                    <p class="mb-3 mt-3 text-center">Caseificio : To find the Cheese Factories in your area</p>
-                    <p class="mb-3 mt-3 text-center">Frantoio : To find the Olive Oil Mills in your area </p>
-                    <p class="mb-3 mt-3 text-center">Cantina : To find the Wine Producers in your area</p>
+                    <p class="text-center"><i class="fas fa-cheese"></i>Caseificio : To find Cheese Factories in your area</p>
+                    <p class="text-center"><i class="fas fa-glass-cheers"></i>  Cantina : To find Wine Producers in your area</p>
+                    <p class="text-center"><i class="fas fa-seedling"></i>  Frantoio : To find Olive Oil Mills in your area </p>
             </div>
         </div>
     </div>
@@ -103,8 +100,8 @@
         <div class="map text-center" id="map"></div>
     </div>
     <div class="row">
-        <div class="col-12 titles">
-            <h2>Spring Waters and Spa's</h2>
+        <div class="col-12 ">
+            <h2 class="text-center spot" id="pools">Spring Waters and Spa's</h2>
         </div>
     </div>
 </div>
@@ -248,10 +245,10 @@
 
 </div>
 
-<div class="container-fluid titles">
+<div class="container-fluid">
     <div class="row">
-    <div class="class-12">
-        <h2>Villages and Cities Peculiarities</h2>
+    <div class="col-12">
+        <h2 class="text-center spot" id="hinterest">In Villages and Cities</h2>
     </div>
     </div>
 </div>
@@ -395,10 +392,10 @@
 
 </div>
 
-<div class="container-fluid titles">
+<div class="container-fluid">
 	<div class="row">
-		<div class="class-12">
-			<h2> Recommended Restaurants</h2>
+		<div class="col-12">
+			<h2 class="text-center spot" id="local"> Recommended Restaurants</h2>
 		</div>
 	</div>
 </div>
@@ -468,7 +465,7 @@
 				<img src="assets/images/restaurants/trattoria-san-quirico-d'orcia.jpg" alt="luxury spa" class="model">
 			<!--details-->
                 <div class="details">
-                    <h4>Trattoria al Vecchio Forno</h4>
+                    <h4>Al Vecchio Forno</h4>
                     <p>This Trattoria is in a 16nth century building that has been the bakery of San Quirico d'Orcia for centuries.
                     Their products are locally sourced and they offer a variety of 250 carefully chosen wine etiquettes in their cellar </p>
                 </div>
@@ -559,28 +556,58 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col-12">
-                <h2 class="titles">Reach us for extra info's</h2>
+                <h2 class="text-center spotto">Reach us for extra info's</h2>
+            </div>
+            <div class="col-12 em">
+                <p class="text-center">If you need any help in planning your visit you can simply Mail us.<br>
+                According to the kind of vacation you would like to have, we can advise you where to rent a car,<br> public transportation routes, or in which area would be better to plan your stay.<br>
+                Just let us know through the form below</p>
             </div>
         </div>
     </div>
+	<div class="container">
+		<div class="row">
+			<div class="col-12">
+				<div class="center-form">
+					<form onsubmit="return sendMail(this);">
+	
+						<div class="form-group">
+							<input type="name" name="name" class="form-control" id="name" placeholder="Name" required>
+							<input type="email" name="email" class="form-control" id="email" placeholder="Email Address" required>
+	        </div>
+							<div class="form-group">
+								<textarea class="form-control" name="info" id="info" rows="4" placeholder="Ask us anything" required></textarea>
+							</div>
+                            <div class="col-12 text-center">
+							<button type="submit" class="btn btn-primary">Submit</button>
+                            </div>
+					</form>
 
-<div class="center-form">
-	<form onsubmit="return sendMail(this);">
-		<div class="form-group">
-			<label for="name">Name</label>
-			<input type="name" name="name" class="form-control" id="name" placeholder="Name" required>
-			<label for="email">Email address</label>
-			<input type="email" name="email" class="form-control" id="email" placeholder="name@example.com" required>
-        </div>
-			<div class="form-group">
-				<label for="info">Ask us anything</label>
-				<textarea class="form-control" name="info" id="info" rows="4" required></textarea>
+				</div>
 			</div>
-			<button type="submit" class="btn btn-primary">Submit</button>
-	</form>
-</div>
+		</div>
+	</div>
 
-<footer>
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fas fa-angle-double-up"></i></button>
+
+
+<footer class="footer">
+    <div class="container-fluid">
+        <div class="row">
+                <div class="col-md-4 col-sm-6 width">
+                <img src="assets/images/logo.png" id="foot-logo" alt="Company Logo">
+                </div>
+                <div class="col-md-4 col-sm-6 socially width">
+                        <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/" target="_blank"><i class="fab fa-linkedin-in"></i></a>             
+                </div>
+                <div class="col-md-4 hidden-sm hidden-xs">
+                <p id="foot-p">Website Designed and Built By Nicola Spigaglia</p>
+                </div>
+        </div>
+    </div>
+
 </footer>
 
 
@@ -591,7 +618,8 @@
     <script async defer
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCVLFpOteRAja24BTRfyj6NVm8KjcqcNJs&callback=initMap&libraries=places&v=weekly">
     </script>
-    <script src="https://unpkg.com/@googlemaps/markerclustererplus/dist/index.min.js"></script>   
+    <script src="https://unpkg.com/@googlemaps/markerclustererplus/dist/index.min.js"></script>  
+     
     <script src="assets/js/script.js" type="text/javascript"></script>
     <script src="assets/js/lightslider.js" type="text/javascript"></script> 
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
@@ -601,6 +629,7 @@
         })();
     </script>
     <script src="assets/js/myemailjs.js" type="text/javascript"></script>
+    <script src="assets/js/topBtn.js" type="text/javascript"></script>
 
 
 
