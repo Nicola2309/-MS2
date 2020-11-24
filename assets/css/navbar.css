@@ -19,7 +19,8 @@ h5  {
     text-align: center;
 }
 
-a {
+.navbar-nav a,
+.croppy a {
     font-family: 'Cormorant SC', serif;
     color: lightgrey;
     text-decoration: none;
