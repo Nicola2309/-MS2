@@ -1,427 +1,413 @@
-#head1{
-    text-align: center;
-    margin: 15px auto;
+#head1 {
+	text-align: center;
+	margin: 15px auto;
 }
 
-.jumbotron{
-    margin:0;
-    /*Foto di nathanfav da Pixabay */
-    background-image: url('../images/san-filippo-corrr.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 550px;
+.jumbotron {
+	margin: 0;
+	/*Foto di nathanfav da Pixabay */
+	background-image: url('../images/san-filippo-corrr.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 550px;
 }
 
-#call-me{
-    position: relative;
-    margin-top: 30%;
+#call-me {
+	position: relative;
+	margin-top: 30%;
 }
 
 .display-6,
 .lead {
-    margin-left: 24px;
-    color: white;
+	margin-left: 24px;
+	color: white;
 }
 
-.display-6 span{
-    font-size: 1.2em;
+.display-6 span {
+	font-size: 1.2em;
 }
 
-.croppy img{
-    margin-top: 18px;
-    height: 81%;
-    width: 93%;
+.croppy img {
+	margin-top: 18px;
+	height: 81%;
+	width: 93%;
 }
 
 .centered {
-    color: white;
-    font-size: 2em;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+	color: white;
+	font-size: 2em;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
 }
 
-.spotto{
-    font-size: 3.4em;
-    margin-top: 72px;
-    margin-bottom: 36px;
+.spotto {
+	font-size: 3.4em;
+	margin-top: 72px;
+	margin-bottom: 36px;
 }
 
-.em p{
-    padding: 0 10px;
-    font-size: 1.3em;
-    margin-top: 42px;
+.em p {
+	padding: 0 10px;
+	font-size: 1.3em;
+	margin-top: 42px;
 }
 
-.spot{
-    font-size: 3.4em;
-    margin: 72px 0;
+.spot {
+	font-size: 3.4em;
+	margin: 72px 0;
 }
 
-.form-control{
-    margin: 30px auto;
-    width: 65%;
+.form-control {
+	margin: 30px auto;
+	width: 65%;
 }
 
-#map{
-    width: 80%;
-    height: 600px;
-    margin: 0 auto;
+#map {
+	width: 80%;
+	height: 600px;
+	margin: 0 auto;
 }
 
-.row{
-     margin: 0;
+.row {
+	margin: 0;
 }
+
 
 /*-----------------------Icon Styling*/
 
-.fas{
-    margin-right: 21px;
-    font-size: 1.5em;
+.fas {
+	margin-right: 21px;
+	font-size: 1.5em;
 }
 
-.fas:hover{
-    font-size: 1.6em;
-}
-.fa-cheese{
-    color: orange;
+.fas:hover {
+	font-size: 1.6em;
 }
 
-.fa-seedling{
-    color: green;
+.fa-cheese {
+	color: orange;
 }
 
-.fa-glass-cheers{
-color: red;
+.fa-seedling {
+	color: green;
 }
+
+.fa-glass-cheers {
+	color: red;
+}
+
 
 /*-------------------------Carousel styling, Going-To Internet tutorial, link in README*/
-ul{
-    list-style: none;
+
+ul {
+	list-style: none;
 }
 
-a{
-    text-decoration: none;
+a {
+	text-decoration: none;
 }
 
-.slid-ing{
-    height: 400px;
-    background-color: rgba(0,0,0,0.1);
-    display:flex;
-    justify-content: center;
-    align-items: center;
+.slid-ing {
+	height: 400px;
+	background-color: rgba(0, 0, 0, 0.1);
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
-.box{
-    width: 310px;
-    height: 210px;
-    border-radius: 10px;
-    flex-direction: column;
-    align-items:center;
-    justify-content: space-between;
-    box-sizing: border-box;
-    margin: 15px 9px;
+.box {
+	width: 310px;
+	height: 210px;
+	border-radius: 10px;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+	box-sizing: border-box;
+	margin: 15px 9px;
 }
 
-.model{
-    width: 310px;
-    height: 210px;
+.model {
+	width: 310px;
+	height: 210px;
 }
 
-.details{
-    margin-top: 6px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 300px;
+.details {
+	margin-top: 6px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 300px;
 }
 
-.details p{
-    font-family: 'Open Sans';
-    font-weight: bold;
-    font-size: 12px;
-    color: #6a6a74;
-    text-align: center;
-    padding-right: 27px;
+.details p {
+	font-family: 'Open Sans';
+	font-weight: bold;
+	font-size: 12px;
+	color: #6a6a74;
+	text-align: center;
+	padding-right: 5px;
+	padding-left: 10px;
 }
 
-.autoWidth{
-    height: 372px !important;
+.autoWidth {
+	height: 372px !important;
 }
 
-.box:hover{
-    transform-style: preserve-3d;
-    transform: scale(1.02);
-    transition: all ease 0.3s;
+.box:hover {
+	transform-style: preserve-3d;
+	transform: scale(1.02);
+	transition: all ease 0.3s;
 }
 
-.lSAction > a{
-    opacity: 1;
+.lSAction>a {
+	opacity: 1;
 }
+
 
 /*---------------------------------Form button*/
 
 .btn-primary {
-    color: #fff;
-    background-color: blue;
-    border-color: blue;
-    font-family: 'Cormorant SC';
-    font-size: x-large;
+	color: #fff;
+	background-color: blue;
+	border-color: blue;
+	font-family: 'Cormorant SC';
+	font-size: x-large;
 }
+
+
 /*---------------------------------Footer*/
-.footer{
-    margin-top: 36px;
-    background-color: rgba(0 ,0 ,0 , 0.1);
+
+.footer {
+	margin-top: 36px;
+	background-color: rgba(0, 0, 0, 0.1);
 }
 
-#foot-logo{
-    width: 100px;
-    margin-top: 15px;
+#foot-logo {
+	width: 100px;
+	margin-top: 15px;
 }
 
-.socially{
-    justify-content: center;
-    margin-top: 7%;
-    display: flex;
+.socially {
+	justify-content: center;
+	margin-top: 4%;
+	display: flex;
 }
 
-#foot-p{
-    margin-top: 18%;
-    margin-bottom: 3%;
+#foot-p {
+	margin-top: 13%;
 }
 
 .fab {
-    font-size: 1.4em;
-    color:blue;
-    margin-right: 5px;
-    margin-left: 5px;
+	font-size: 1.6em;
+	color: blue;
+	margin-right: 9px;
+	margin-left: 9px;
 }
 
-.fab:hover{
-    color: white;
+.fab:hover {
+	color: white;
 }
+
 
 /*---------------------------------Bring-User-To-Top Button*/
 
 #myBtn {
-  margin: 0;
-  display: none;
-  position: fixed;
-  right: 30px;
-  z-index: 99;
-  font-size: 18px;
-  border: none;
-  outline: none;
-  background-color: rgb(72, 193, 239);
-  color: white;
-  cursor: pointer;
-  padding: 15px;
-  border-radius: 4px;
+	margin: 0;
+	display: none;
+	position: fixed;
+	right: 30px;
+	z-index: 99;
+	font-size: 18px;
+	border: none;
+	outline: none;
+	background-color: rgb(72, 193, 239);
+	color: white;
+	cursor: pointer;
+	padding: 15px;
+	border-radius: 4px;
 }
 
 #myBtn:hover {
-  background-color: #555;
+	background-color: #555;
 }
 
-.fas.fa-angle-double-up{
-    margin: -6px 8px;
-    display: block;
-    font-size: 2em;
+.fas.fa-angle-double-up {
+	margin: -6px 8px;
+	display: block;
+	font-size: 2em;
 }
+
 
 /*---------------------------------Media Queries*/
 
-@media screen and ( min-width:1025px){
-    #call-me{
-    position: relative;
-    margin-top: 17%;
+@media screen and ( min-width:1025px) {
+	#call-me {
+		position: relative;
+		margin-top: 17%;
+	}
+	#myBtn {
+		bottom: 170px;
+		right: 21px;
+	}
 }
 
-#myBtn{
-    bottom: 170px;
-    right: 21px;
+@media screen and ( max-width:1024px) {
+	#call-me {
+		position: relative;
+		margin-top: 27%;
+	}
+	#myBtn {
+		bottom: 132px;
+		right: 21px;
+	}
 }
 
+@media screen and ( max-width:768px) {
+	#call-me {
+		position: relative;
+		margin-top: 34%;
+	}
+	.form-control {
+		width: 75%;
+	}
 }
 
-@media screen and ( max-width:1024px){
-    #call-me{
-    position: relative;
-    margin-top: 27%;
-}
-#myBtn{
-    bottom: 132px;
-    right: 21px;
+@media screen and ( max-width:720px) {
+	#call-me {
+		position: relative;
+		margin-top: 21%;
+	}
 }
 
+@media screen and (max-width: 540px) {
+	#call-me {
+		position: relative;
+		margin-top: 63%;
+	}
+	.fab {
+		font-size: 1.4em;
+		margin-right: 5px;
+		margin-left: 5px;
+	}
+	.jumbotron {
+		background-position-x: center;
+	}
+	.form-control {
+		width: 100%;
+	}
+	#map {
+		width: 90% !important;
+		height: 450px !important;
+	}
+	.width {
+		width: 50%;
+	}
+	.socially {
+		justify-content: flex-end;
+		margin-top: 4%;
+		margin-bottom: 3%;
+		display: flex;
+	}
+	#foot-p {
+		display: none;
+	}
+	#myBtn {
+		bottom: 5px;
+	}
 }
 
-
-@media screen and ( max-width:768px){ 
-    #call-me{
-    position: relative;
-    margin-top: 34%;
+@media screen and ( max-width: 416px) {
+	#call-me {
+		position: relative;
+		margin-top: 75%;
+	}
+	.spot {
+		font-size: 3em;
+		margin: 72px 0;
+	}
+	.details,
+	.details p,
+	.box,
+	.model {
+		width: 372px;
+		;
+		height: 210px;
+	}
+	.fas {
+		margin: 30px 0 12px 0;
+		display: block;
+		font-size: 1.5em;
+	}
+	.lSSlideOuter .lSPager.lSpg>li {
+		padding: 0;
+	}
+	.lSSlideOuter .lSPager.lSpg>li a {
+		margin: 0 5px 0 10px;
+	}
 }
-
-.form-control{
-    width: 75%;
-}
-}
-
-@media screen and ( max-width:720px){
-    #call-me{
-    position: relative;
-    margin-top: 21%;
-}
-}
-
-@media screen and (max-width: 540px){
-    #call-me{
-    position: relative;
-    margin-top: 63%;
-
-}
-
-.jumbotron
-{
-    background-position-x: center;
-}
-
-.form-control{
-    width: 100%;
-}
-
-#map{
-    width: 90% !important;
-    height: 450px !important;
-}
-
-
-.width{
-    width: 50%;
-}
-
-.socially {
-    justify-content: flex-end;
-    margin-top: 4%;
-    margin-bottom: 3%;
-    display: flex;
-}
-
-#foot-p{
-    display: none;
-}
-
-#myBtn{
-    bottom: 5px;
-}
-
-}
-
-@media screen and ( max-width: 416px){
-    #call-me{
-    position: relative;
-    margin-top: 75%;
-}
-
-.spot{
-    font-size: 3em;
-    margin: 72px 0;
-}
-
-
-.details,
-.details p,
-.box,
-.model    {
-    width: 372px;;
-    height: 210px;
-}
-
-.fas {
-    margin: 30px 0 12px 0;
-    display: block;
-    font-size: 1.5em;
-}
-
-.lSSlideOuter .lSPager.lSpg li a{
-    margin: auto 9px;
-}
-}
-
 
 @media screen and ( max-width:375px) {
-    #call-me{
-    position: relative;
-    margin-top: 84%;
-}
-
-.box{
-    margin:15px 3px 15px 0;
-}
-
-.slid-ing{
-    padding:0;
-}
-
-.details,
-.details p,
-.box,
-.model    {
-    width: 375px;
-}
-
+	#call-me {
+		position: relative;
+		margin-top: 84%;
+	}
+	.box {
+		margin: 15px 3px 15px 0;
+	}
+	.slid-ing {
+		padding: 0;
+	}
+	.details,
+	.details p,
+	.box,
+	.model {
+		width: 375px;
+	}
+	.details p {
+		padding-left: 9px;
+		padding-right: 18px;
+	}
 }
 
 @media screen and ( max-width:360px) {
-.details,
-.details p,
-.box,
-.model    {
-    width: 280px;
-    margin-left: 21px;
+	.details,
+	.details p,
+	.box,
+	.model {
+		width: 280px;
+		margin-left: 21px;
+	}
+	.lSSlideOuter .lSPager.lSpg>li {
+		margin-left: -12px;
+	}
 }
-
-.lSSlideOuter .lSPager.lSpg > li{
-    margin-left: -12px;
-}
-}
-
 
 @media screen and ( max-width:320px) {
-
-.spot{
-    font-size: 2.4em;
-    margin: 72px 0;
+	.spot {
+		font-size: 2.4em;
+		margin: 72px 0;
+	}
+	.col-12 {
+		padding: 0;
+	}
+	.details,
+	.details p,
+	.box,
+	.model {
+		margin-left: 4px;
+	}
+	.width {
+		padding: 0;
+	}
+	.socially {
+		justify-content: center;
+		margin-top: 9%;
+		display: flex;
+	}
+	.details p {
+		padding-left: 12px;
+		padding-right: 27px;
+	}
 }
-
-.col-12{
-    padding: 0;
-}
-
-.details,
-.details p,
-.box,
-.model    {
-    margin-left: 4px;
-}
-
-.width{
-    padding: 0;
-}
-
-.socially {
-    justify-content: center;
-    margin-top: 9%;
-    display: flex;
-}
-}
-
-
-
-
-
-
-
-
