@@ -14,7 +14,7 @@ function initMap() {
 	});
 	setMarkers(map);
 
-	//----------------------- Search Box from Google Docs and the Develop Mindfully Tutorial and Michelle Clement ms2
+	// Search Box from Google Docs and the Develop Mindfully Tutorial and Michelle Clement ms2
 	const input = document.getElementById("search");
 
 	const searchBox = new google.maps.places.SearchBox(input);
@@ -95,6 +95,7 @@ function setMarkers(map) {
 	var icons = {
 		pool: {
 			icon: {
+            //Icon from Google Docs link in *NOTE : https://developers.google.com/maps/documentation/javascript/custom-markers
 				url: 'assets/images/icons/spring-icon.png',
 				scaledSize: new google.maps.Size(30, 30),
 				anchor: new google.maps.Point(10, 20),
@@ -102,6 +103,7 @@ function setMarkers(map) {
 		},
 		spa: {
 			icon: {
+            //Icon from Google Docs link in *NOTE : https://developers.google.com/maps/documentation/javascript/custom-markers
 				url: 'assets/images/icons/pool-icon.png',
 				scaledSize: new google.maps.Size(27, 27),
 				anchor: new google.maps.Point(10, 20),
@@ -109,12 +111,14 @@ function setMarkers(map) {
 		},
 		restaurant: {
 			icon: {
+            //Icon from Google Docs link in *NOTE : https://developers.google.com/maps/documentation/javascript/custom-markers
 				url: 'assets/images/icons/dining-icon.png',
 				scaledSize: new google.maps.Size(27, 27),
 				anchor: new google.maps.Point(20, 20),
 			}
 		},
 		landmark: {
+            //Icon from Google Docs link in *NOTE : https://developers.google.com/maps/documentation/javascript/custom-markers
 			icon: {
 				url: 'assets/images/icons/red-pushpin.png',
 				scaledSize: new google.maps.Size(27, 27),
@@ -124,7 +128,7 @@ function setMarkers(map) {
 
 	};
 
-
+    //Looping through markers content to address infowindow
 	for (let i = 0; i < markersOnMap.length; i++) {
 		let contentString = markersOnMap[i].placeName;
 
@@ -151,7 +155,7 @@ function setMarkers(map) {
 
 
 var markersOnMap = [
-	//----------------------------------- Hot Waters Locations
+	// Hot Waters Locations Data
 	{
 		placeName: "<img src='assets/images/150px/rapolano-150px-pexels-vincent-rivaud.jpg'><h4>Terme di Rapolano</h4><a target='_blank' href='https://www.termesangiovanni.it/it/home'>Click here for the Official Website</a>",
 		LatLng: [{
@@ -161,7 +165,7 @@ var markersOnMap = [
 		type: 'spa'
 	},
 	{
-		placeName: "<img src='assets/images/150px/Saturnia-Mulino-150pxpexels-matheus-bertelli.jpg'><h4>Cascate del Mulino, Saturnia</h4><a target='_blank' href='https://www.cascate-del-mulino.info/'>Click here for the Official Website</a>",
+		placeName: "<img src='assets/images/150px/saturnia-mulino-150pxpexels-matheus-bertelli.jpg'><h4>Cascate del Mulino, Saturnia</h4><a target='_blank' href='https://www.cascate-del-mulino.info/'>Click here for the Official Website</a>",
 		LatLng: [{
 			lat: 42.648306,
 			lng: 11.512613,
@@ -169,7 +173,7 @@ var markersOnMap = [
 		type: 'pool'
 	},
 	{
-		placeName: "<img src='assets/images/150px/SaturniaSpa150px-pexels-barbara-ribeiro.jpg'><h4> SPA & Golf Resort of Saturnia</h4><a target='_blank' href='https://www.termedisaturnia.it/it'>Click here for the Official Website</a>",
+		placeName: "<img src='assets/images/150px/saturniaspa150px-pexels-barbara-ribeiro.jpg'><h4> SPA & Golf Resort of Saturnia</h4><a target='_blank' href='https://www.termedisaturnia.it/it'>Click here for the Official Website</a>",
 		LatLng: [{
 			lat: 42.657329,
 			lng: 11.516620
@@ -177,7 +181,7 @@ var markersOnMap = [
 		type: 'spa'
 	},
 	{
-		placeName: "<img src='assets/images/150px/Bagnifilippo150pxpexels-eberhard-grossgasteiger.jpg'><h4> Bagni San Filippo</h4><a target='_blank' href='http://www.bagnisanfilippoterme.it/bagni%20san%20filippo.html'>Click here for the Official Website</a>",
+		placeName: "<img src='assets/images/150px/bagnifilippo150pxpexels-eberhard-grossgasteiger.jpg'><h4> Bagni San Filippo</h4><a target='_blank' href='http://www.bagnisanfilippoterme.it/bagni%20san%20filippo.html'>Click here for the Official Website</a>",
 		LatLng: [{
 			lat: 42.927768,
 			lng: 11.702583
@@ -193,7 +197,7 @@ var markersOnMap = [
 		type: 'spa'
 	},
 	{
-		placeName: "<img src='assets/images/150px/bagnifilippospa-150px-pexels-barbara-ribeiro-5731220.jpg'><h4>Fonteverde Spa & Hotel</h4><a target='_blank' href='https://www.fonteverdespa.com/it/resort-spa-toscana/1-0.html'>Click here for the Official Website</a>",
+		placeName: "<img src='assets/images/150px/fonteverde-150px-pexels-andrea-piacquadio-1418519.jpg'><h4>Fonteverde Spa & Hotel</h4><a target='_blank' href='https://www.fonteverdespa.com/it/resort-spa-toscana/1-0.html'>Click here for the Official Website</a>",
 		LatLng: [{
 			lat: 42.861133,
 			lng: 11.876253
@@ -201,7 +205,7 @@ var markersOnMap = [
 		type: 'spa'
 	},
 	{
-		placeName: "<img src='assets/images/150px/Theiachianciano-150px-pexels-snapwire-9422 (1).jpg'><h4>Piscine Termali Theia, Chianciano</h4><a target='_blank' href='https://www.piscinetermalitheia.it/'>Click here for the Official Website</a>",
+		placeName: "<img src='assets/images/150px/theiachianciano-150px-pexels-snapwire-9422 (1).jpg'><h4>Piscine Termali Theia, Chianciano</h4><a target='_blank' href='https://www.piscinetermalitheia.it/'>Click here for the Official Website</a>",
 		LatLng: [{
 			lat: 43.043209,
 			lng: 11.809026
@@ -209,7 +213,7 @@ var markersOnMap = [
 		type: 'spa'
 	},
 	{
-		placeName: "<img src='assets/images/150px/sensorialiChianciano-150px-pexels-barbara-ribeiro.jpg'><h4>Terme Sensoriali di Chianciano</h4><a target='_blank' href='https://www.termesensoriali.it/'>Click here for the Official Website</a>",
+		placeName: "<img src='assets/images/150px/sensorialichianciano-150px-pexels-barbara-ribeiro.jpg'><h4>Terme Sensoriali di Chianciano</h4><a target='_blank' href='https://www.termesensoriali.it/'>Click here for the Official Website</a>",
 		LatLng: [{
 			lat: 43.042778,
 			lng: 11.816051
@@ -233,7 +237,7 @@ var markersOnMap = [
 		type: 'pool'
 	},
 	{
-		placeName: "<img src='assets/images/150px/Mercure-150px-pexels-pixabay-221457 (1).jpg'><h4>Mercure Spa Hotel, Petriolo</h4><a target='_blank' href='https://mercurepetriolosienatermespa.it/'>Click here for the Official Website</a>",
+		placeName: "<img src='assets/images/150px/mercure-150px-pexels-pixabay-221457 (1).jpg'><h4>Mercure Spa Hotel, Petriolo</h4><a target='_blank' href='https://mercurepetriolosienatermespa.it/'>Click here for the Official Website</a>",
 		LatLng: [{
 			lat: 43.075044,
 			lng: 11.297955
@@ -257,7 +261,7 @@ var markersOnMap = [
 		type: 'spa'
 	},
 	{
-		placeName: "<img src='assets/images/150px/Caldane150pxpexels-pixabay-261088 (2).jpg'><h4>Le Caldane, Terme Etrusco-Romane</h4><a target='_blank' href='https://commons.wikimedia.org/wiki/Category:Le_Caldane'>Click here for the Official Website</a>",
+		placeName: "<img src='assets/images/150px/caldane150pxpexels-pixabay-261088 (2).jpg'><h4>Le Caldane, Terme Etrusco-Romane</h4><a target='_blank' href='https://commons.wikimedia.org/wiki/Category:Le_Caldane'>Click here for the Official Website</a>",
 		LatLng: [{
 			lat: 43.390897,
 			lng: 11.134595
@@ -273,7 +277,7 @@ var markersOnMap = [
 		type: 'spa'
 	},
 
-	//----------------------------------- Restaurant Locations
+        // Restaurant Locations Data
 
 	{
 		placeName: "<img src='assets/images/150px/vecchioforno-150px-pexels-pixabay.jpg'><h4>Al Vecchio Forno, San Quirico D Orcia</h4><a target='_blank' href='https://www.palazzodelcapitano.com/tuscany/trattoria-toscana/'>Click here for the Official Website</a>",
@@ -322,7 +326,7 @@ var markersOnMap = [
 		type: 'restaurant'
 	},
 	{
-		placeName: "<img src='assets/images/150px/Daniela-150px-pexels-chan-walrus.jpg'><h4>Ristorante Daniela, San Casciano dei Bagni</h4><a target='_blank' href='https://tuscanhouse.com/ristorante-daniela/'>Click here for the Official Website</a>",
+		placeName: "<img src='assets/images/150px/daniela-150px-pexels-chan-walrus.jpg'><h4>Ristorante Daniela, San Casciano dei Bagni</h4><a target='_blank' href='https://tuscanhouse.com/ristorante-daniela/'>Click here for the Official Website</a>",
 		LatLng: [{
 			lat: 42.870937,
 			lng: 11.875331
@@ -370,7 +374,7 @@ var markersOnMap = [
 		type: 'restaurant'
 	},
 
-	//----------------------------------- Historical Locations
+	// Historical Locations Data
 	{
 		placeName: "<img src='assets/images/150px/pienza-150px-pexels-oleg-magni.jpg'><h4>Pienza</h4><a target='_blank' href='https://www.comune.pienza.si.it/'>Click here for the Official Website</a>",
 		LatLng: [{
@@ -396,7 +400,7 @@ var markersOnMap = [
 		type: 'landmark'
 	},
 	{
-		placeName: "<img src='assets/images/150px/siena-150px-pexels-Foto di David Mark da Pixabay.jpg'><h4>Piazza del Campo, Siena</h4><a target='_blank' href='https://www.comune.siena.it/'>Click here for the Official Website</a>",
+		placeName: "<img src='assets/images/150px/siena-150px-pexels-foto-di-david-mark-da-pixabay.jpg'><h4>Piazza del Campo, Siena</h4><a target='_blank' href='https://www.comune.siena.it/'>Click here for the Official Website</a>",
 		LatLng: [{
 			lat: 43.318421,
 			lng: 11.331696
@@ -404,7 +408,7 @@ var markersOnMap = [
 		type: 'landmark'
 	},
 	{
-		placeName: "<img src='assets/images/150px/Gimignano-150px-pexels-lisa-fotios.jpg'><h4>San Gimignano</h4><a target='_blank' href='https://www.sangimignano.com/'>Click here for the Official Website</a>",
+		placeName: "<img src='assets/images/150px/gimignano-150px-pexels-lisa-fotios.jpg'><h4>San Gimignano</h4><a target='_blank' href='https://www.sangimignano.com/'>Click here for the Official Website</a>",
 		LatLng: [{
 			lat: 43.467450,
 			lng: 11.043789
