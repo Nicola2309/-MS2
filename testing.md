@@ -82,10 +82,13 @@ I used [JSHint](https://jshint.com/) to check my JavaScript Files.
 This Brought up the following warnings and the step that I took to correct them:
 - *lightslider.js*- The imported code passed without errors
 - *script.js* - Three Semicolon were missing in my code, I corrected the errors adding semicolons accordingly. Screenshot below
-![JSHint script.js errors](https://github.com/Nicola2309/-MS2/blob/master/assets/readme-pics/jshint-script.png)
-- *maps.js* - received just several warnings as shown in the screenshots below.
-![JSHint maps.js errors](https://github.com/Nicola2309/-MS2/blob/master/assets/readme-pics/jshint-map.png)
-![JSHint maps.js errors](https://github.com/Nicola2309/-MS2/blob/master/assets/readme-pics/jshint-map1.png)
+![JSHint script.js errors](https://github.com/Nicola2309/-MS2/blob/master/assets/images/readme-pics/jshint-script.png)
+- *maps.js* - received just several warnings as shown in the screenshots below. The majority of the warinings highlight the use of ES6 and the elements available in that notation, three lines are actually interesting:
+    * 455 : Missing semicolon - Corrected.
+    * 150 : Unnecessary semicolon - Corrected.
+    * 142 : The Function declared references an outer scope variable, may leading to confusing semantics - The code works and is efficient with this semantic, its reduced size and specificity eliminates most of the possible human confusion ; in the future and for larger codes I mighit find other solutions to implement functions in it.
+![JSHint maps.js errors](https://github.com/Nicola2309/-MS2/blob/master/assets/images/readme-pics/jshint-map.png)
+![JSHint maps.js errors](https://github.com/Nicola2309/-MS2/blob/master/assets/images/readme-pics/jshint-map1.png)
 - *myemailjs.js* - Passed without errors
 
 ### Testing compatibility with different browsers

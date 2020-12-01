@@ -3,7 +3,7 @@
 ## Code Institute: Milestone Project 2
 
 
-![Tuscany Thermal Wellness Responsive Design](https://github.com/Nicola2309/-MS2/blob/master/assets/images/ami-responsive.png)
+![Tuscany Thermal Wellness Responsive Design](https://github.com/Nicola2309/-MS2/blob/master/assets/images/readme-pics/ami-responsive.png)
 
 
 *Tuscany Thermal Wellness*  is a fictional website that aims to promote hot springs and Spa's of Tuscany and the related activities in those areas, and provide the user with a list of beautiful, tried and highly recommended places
@@ -92,13 +92,13 @@ The following User Stories helped me to create a design that would satisfy the n
 ### Wireframing with Figma
 
 Design for desktop devices:
-![My workspace on Figma](https://github.com/Nicola2309/-MS2/blob/master/assets/images/wireframe-desktop.png)
+![My workspace on Figma](https://github.com/Nicola2309/-MS2/blob/master/assets/images/readme-pics/wireframe-desktop.png)
 
 Design for mobile devices:
-![My responsive design for mobile devices](https://github.com/Nicola2309/-MS2/blob/master/assets/images/wireframe-phone.png)
+![My responsive design for mobile devices](https://github.com/Nicola2309/-MS2/blob/master/assets/images/readme-pics/wireframe-phone.png)
 
 Design for tablet devices:
-![My responsive design for tablet devices](https://github.com/Nicola2309/-MS2/blob/master/assets/images/wireframe-tablet.png)
+![My responsive design for tablet devices](https://github.com/Nicola2309/-MS2/blob/master/assets/images/readme-pics/wireframe-tablet.png)
 
 [The entire workspace can be viewed on Figma with this link.](https://www.figma.com/file/jc8QKDwQCQ1ecvrTFuogfB/MS's?node-id=0%3A1)
 
@@ -115,9 +115,10 @@ Contact Form – The contact form is an easy and direct way for the user to ask 
 
 ### Features to implement in the future
 
-There are a couple of features I would like to implement in the future to make the map feature even more user friendly.
+There are three of features I would like to implement in the future to make the map feature even more user friendly.
 * Importing infowindows from maps for the locations searched by the user, that now needs to zoom to the actual location to get the infowindow prompted.
 * Show user location on the map - I would like to add this feature so that a user can easily see their location compared to the recomendations. 
+* Implement the Distance Matrix API and give the possibility to see, for the user, how distant is a chosen place to another.
 
 
 ## Technologies Used
@@ -165,7 +166,7 @@ I used a number of languages, frameworks and tools to construct my website. Thes
 
 ## Testing
 
-Please view the complete testing process in this separate document [here]().
+Please view the complete testing process in this separate document [here](https://github.com/Nicola2309/-MS2/blob/master/testing.md).
 
 
 
