@@ -12,12 +12,38 @@ to visit in Tuscany. The content online about all the places to go and visit is 
 The idea for this project came to me in my numerous visits in the thermal sites in southern Tuscany, and I realized that those areas
 are definitely not as known as northern Tuscany, which includes Florence and Pisa, but they have many tidbits to offer.
 As I completed the Javascript module in the course I decided to implement in different ways throughout the project: with a Google Maps API, imported a carousel for the areas content 
-from [Going-To Internet tutorial, Responsive Product Slider Using HTML CSS and Javascript](https://www.goingtointernet.com/2020/03/make-marvel-slider.html), a styled arrow to go back at the top of the page, and a form to send the organiation additional requests.
+from [Going-To Internet tutorial, Responsive Product Slider Using HTML CSS and Javascript](https://www.goingtointernet.com/2020/03/make-marvel-slider.html), a styled arrow to go back at the top of the page, and a form to send the organisation additional requests.
 
 This was the second of four Milestone Projects that made up the Full Stack Web Development Program at *The Code Institute*.
 The main requirements were to make an interactive and responsive website with HTML5, CSS3 and JavaScript.
 
 [Click here to view the project live.](https://nicola2309.github.io/-MS2/)
+
+## Table of contents
+
+- [**UX**](#UX)
+    - [Main aims](#Main-aims)
+    - [User Stories](#User-Stories)
+        - [Project Stakeholders](#Project-Stakeholders)
+        - [New Users](#New-Users)
+        - [Returning Users](#Returning-Users)
+        - [Frequent User](#Frequent-User)
+    - [Design Process](#Design-Process)
+- [**Features**](#Features)
+    - [Existing features](#Existing-website-features)
+    - [Features left to implement](#Features-to-implement-in-the-future)
+- [**Technologies used**](#Technologies-used)
+- [**Testing**](https://github.com/Nicola2309/-MS2/blob/master/testing.md)
+- [**Deployment**](#Deployment)
+    - [Local deployment](#Deploying-my-project)
+    - [Deploying this project to Github](#Deploying-to-GitHub-Pages)
+    - [Deploying with Google Maps API](#Deploying-with-Google-Maps-API)
+    - [Deploying with EmailJS](#Deploying-with-EmailJS)
+- [**Credits**](#Credits)
+    - [Content](#Content)
+    - [Images](#Images)
+    - [Additional Support](#Additional-Support)
+    - [Acknowledgements](#Acknowledgements)
 
 ## UX
 
@@ -30,7 +56,7 @@ so to offer a relax focused vacation with all the classic and special places to 
 
 * To make the website interactive through Javascript, a Google Maps API feature, a carousel to learn about all the indicated places, and the chance to ask any related information through a form.
 
-* To make it easy for the user to go through the wesite, by having a clear menu bar including links to the different page sections of the website, and a styled arrow to go back at the top of the page.
+* To make it easy for the user to go through the website, by having a clear menu bar including links to the different page sections of the website, and a styled arrow to go back at the top of the page.
 
 * To create a design that would be fully responsive on all devices and screen sizes.
 
@@ -68,9 +94,9 @@ The following User Stories helped me to create a design that would satisfy the n
 
 5. Surface plane: 
     * For my design to work, I decided to shrink the different pages into one, removing the 'Our Role' section, since having all the info's in one place would have made the 'Role' way clearer to the user.
-    * With this in mind, I reopened my workspace on [Figma](https://www.figma.com/file/jc8QKDwQCQ1ecvrTFuogfB/MS's) dedicated to my Milestone projects and began experimenting with my wireframe. As with my first Milestone Project, I found it useful to have my hero image in place to extract complementary colors for the theme from it. I also began searching for ideas for my Logo on [FreeLogoDesign](https://nl.freelogodesign.org/) as I felt this would be important to the theme of the design. In the end I settled with a light green and light blue them for the waves which represent both the landscape and the waters.
+    * With this in mind, I reopened my workspace on [Figma](https://www.figma.com/file/jc8QKDwQCQ1ecvrTFuogfB/MS's) dedicated to my Milestone projects and began experimenting with my wireframe. As with my first Milestone Project, I found it useful to have my hero image in place to extract complementary colors for the theme from it. I also began searching for ideas for my Logo on [FreeLogoDesign](https://nl.freelogodesign.org/) as I felt this would be important to the theme of the design. In the end I settled with a light green, #17C094, and light blue, #1FBBCC, them for the waves which represent both the landscape and the waters.
     * I turned to Google Fonts to select the fonts for my project. I wanted to find two compatible fonts that would help to both make the design look credible (so users would take it seriously as a source of information). As a result, I settled for Cormorant SC for my titles and Sans Serif for the content. 
-    * With the wireframes complete, I began experimenting with the quiz in a seperate workspace to create the JavaScript needed to make this aspect of my project work. My first idea of the basic structure and code with HTML and JavaScript and the repository can be found on GitHub [here](https://github.com/Nicola2309/MS2).  
+    * With the wireframes complete, I began experimenting with the quiz in a separate workspace to create the JavaScript needed to make this aspect of my project work. My first idea of the basic structure and code with HTML and JavaScript and the repository can be found on GitHub [here](https://github.com/Nicola2309/MS2).  
 
 
 #### Colour Scheme
@@ -79,7 +105,7 @@ The following User Stories helped me to create a design that would satisfy the n
     * Blue from the hero picture: #00a4df
     * Green from the logo upper wave, used in Submit button and Social Media icons : #17C094
     * Grey of the navbar, footer and carousel box: #e5e5e5
-    * White of the backround: #ffffff
+    * White of the background: #ffffff
 
 #### Typography
 
@@ -103,22 +129,37 @@ Design for tablet devices:
 
 [The entire workspace can be viewed on Figma with this link.](https://www.figma.com/file/jc8QKDwQCQ1ecvrTFuogfB/MS's?node-id=0%3A1)
 
+## Features
 
 ### Existing Website Features
 
-Navigation: The main navigation includes a link to each of the main sections of the site, which answer each of the user questions, and is styled clear, simple and modern.
+* Navigation and Hero Image: 
+    - The main navigation includes the Logo and a link to each of the main sections of the site, which answer each of the user questions, and is styled clear, simple and modern.
+    - The Hero image was carefully chose to communicate relax and cosiness with the shades of blue, white and black characterizing it.
+    - Under the Hero image the navigation options continue. The three pictures, representing the activities offered to the user and the website sections, are clickable and lead the user to the chosen part of interest to know more about.
 
-Google Maps API – Using the Google Maps API, all recommendations will be added as custom markers to an inbuilt map.
+* Google Maps API :
+    - This section includes a brief explanation of itself and suggestions to search for in the maps, 'Caseificio', 'Cantina' and 'Frantoio'. The icons in the suggestions sentences become bigger when hovered so to attract the attention of the user and making even clearer what product they are searching for by using those keywords, before even reading the little explanation. The Searchbox helps the user finding every desired location making the website a reliable and useful information source by itself, being useful to the user when performing those searches rather than obligating the user, by design, to leave it and perform the searches on another one.
+    - The Searchbox works thanks to the implementation of the Places API which marks on the map, using a simple mark I implemented, the place or places searched by the user.
+    - The Map contains 37 advised locations, with a proper icon according to the nature of the location. If the location is a free natural pool is represented by [waves](https://github.com/Nicola2309/-MS2/blob/master/assets/images/icons/spring-icon.png), if it is a Spa by [a swimming man](https://github.com/Nicola2309/-MS2/blob/master/assets/images/icons/pool-icon.png), if it is a restaurant by [cutlery](https://github.com/Nicola2309/-MS2/blob/master/assets/images/icons/dining-icon.png), if it of historical interest is represented by a [red pushpin](https://github.com/Nicola2309/-MS2/blob/master/assets/images/icons/red-pushpin.png).
+    - Every Location has its own infowindow containing a picture, the title naming the location and a link to the official website, or in the case of 'Le Caldane', a free thermal site without an official page, to the wikipedia page. The infowindow closes when another icon is clicked so to leave a good user experience.
+ 
+* Carousel Sections :
+    - The carousel sections code is imported, the sections have been completely restyled to fit with the design of my website, changed the colour, reduced the height and filled with carefully chosen pictures, listed below, and my written content. The paragraphs content is carrying the ideas of the place they refer to, and a specific description of its specialtties or peculiarities, and the reasons to visit the described place.
+    - I chose this carousel because it offers a double feature of going through the content, one by just sliding by grabbing elements with the mouse on the computer or sliding with the finger on touch screen devices, or using the classic arrows in the 2 sides of the carousel. I had to bring the opacity of the arrows to 1 to be clearly visible on my grey carousel.
+    - The carousel has been made responsive adjusting the size and margins of each element to look good in every screen size. The carousel indicators margins and puddings have been also resized to look good on every screen size.
+    - The carousel elements are ordered from South to North of Tuscany, prioritizing the part of the region with the least amount and most fragmented content online, making known immediately to the user something else from 'Pisa' and 'Firenze' which are included but not described at all due to the highly abundant material that's already online. If needed, the user can be advised about those cities in the 'Contact Us' section.
 
-Search Google Maps Places – Allowing the ability for the user to search for other places of interest outside those recommended, suggesting awesome places like 'Caseificio', 'Cantina' and 'Frantoio', places who are respectively leading the user to cheese producers, wine producers, and EVO olive oil producers. This will allow the user to be able to find all they need in the one website rather than using multiple.
-
-Contact Form – The contact form is an easy and direct way for the user to ask a question to the site owner. [EmailJS](https://www.emailjs.com/) sends the email directly from the website to the website owner.
+* Contact Us Section : 
+    - The little presentation of the section explains the user the purpose of the service and gives the user some ideas for questions to ask.
+    - The contact form is an easy and direct way for the user to ask a question to the site owner. 
+    - [EmailJS](https://www.emailjs.com/) sends the email directly from the website to the website owner and an automatic reply informing the user that the email has been received and a detailed reply answering the user questions will be sent soon.
 
 ### Features to implement in the future
 
-There are three of features I would like to implement in the future to make the map feature even more user friendly.
+There are three features I would like to implement in the future to make the map feature even more user friendly.
 * Importing infowindows from maps for the locations searched by the user, that now needs to zoom to the actual location to get the infowindow prompted.
-* Show user location on the map - I would like to add this feature so that a user can easily see their location compared to the recomendations. 
+* Show user location on the map - I would like to add this feature so that a user can easily see their location compared to the recommendations. 
 * Implement the Distance Matrix API and give the possibility to see, for the user, how distant is a chosen place to another.
 
 
@@ -126,7 +167,7 @@ There are three of features I would like to implement in the future to make the 
 
 ### Languages, libraries, frameworks, editors, API's
 
-I used a number of languages, frameworks and tools to construct my website. These include;
+I used a number of languages, frameworks and tools to construct my website. These include:
 * [HTML](https://html.com/)
 * [CSS](https://www.w3.org/Style/CSS/Overview.en.html) 
 * [JavaScript](https://www.javascript.com/) 
@@ -155,6 +196,8 @@ I used a number of languages, frameworks and tools to construct my website. Thes
     - This was another source of several of the images used in my project, fully referenced in the 'Media' section below.
 * [Photo](https://www.microsoft.com/en-us/p/microsoft-photos/9wzdncrfjbh4?activetab=pivot:overviewtab)
     - I used this tool to modify the background hero image.
+* [Free Online Spell Check Tool](https://www.internetmarketingninjas.com/online-spell-checker.php)
+    - I used this tool to identify typos in my README.md, testing.md and index.html files.
 * [Google Fonts](https://fonts.google.com/)
     - I used two complementary fonts from Google for my project: Cormorant SC and Sans Seriff. 
 * [W3C Markup Validation Service](https://validator.w3.org/) 
@@ -201,7 +244,7 @@ The above process can be copied if you would like to deploy a project with the G
 
 #### Deploying with EmailJS
 
-I used EmailJS to automatically send an email to the admin each time a user submits the form. This feature can be implemented as follows:
+I used EmailJS to automatically send an email to the admin and reply automatically each time a user submits the form. These features can be implemented as follows:
 1. I created an account with EmailJS and navigated to this [page](https://www.emailjs.com/docs/tutorial/adding-email-service/)
 2. I followed the steps from the tutorial, creating a template and adding the EmailJS javascript library to my project.
 3. I chose to stay with a free account, which limits my monthly quota to 200 emails per month.
@@ -293,7 +336,7 @@ The images are from Pexels, and Pixabay and are referenced below.
 - [Image of the sky from the inside of a brown building](https://pixabay.com/photos/architecture-clouds-wall-5433366/)
 
 
-**Additional Support**
+### Additional Support
 
 I used these tutorials to help me complete and make functional the notions absorbed from Google Docs, which were very useful but not as much as these tutorials who showed me practically the action of every function and guided me to the understanding of the Google Maps API and its functionalities like Customing Markers, Closing the InfoWindow after clicking on another marker for a better UX, and adding the Places API to implement the SearchBox on top of the map.
 

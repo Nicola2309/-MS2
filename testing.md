@@ -6,7 +6,7 @@ The testing process below includes:
 - Checking responsiveness of design on all screen sizes
 - Checking website compatibility on different browsers
 - Manually testing the functionality of all links
-- Manually testing the sigbvn up form
+- Manually testing the sign up form
 
 Return to the general README file clicking [here](https://github.com/Nicola2309/-MS2/blob/master/README.md)
 
@@ -27,7 +27,7 @@ go through in order to collect the desired places to visit and experience.
     * The elements of these three groups have corresponding images that represent each of them with a title and a small related description.
     * Each group has a title above clearly anticipating the category below.
     * Each location can be seen in the map with a link to a website for deeper information.
-- This user would get all the ideas he needs about the area of interest helped by the Maps API as well, and leave with a positive exprience, knowing more about Tuscany's places.
+- This user would get all the ideas he needs about the area of interest helped by the Maps API as well, and leave with a positive experience, knowing more about Tuscany's places.
 
 *User two needs help on planning a relaxing vacation, and searches for a service to use*
 - This user wants to have a vacation focused on thermal baths and needs a service to plan it, with these options:
@@ -83,10 +83,10 @@ This Brought up the following warnings and the step that I took to correct them:
 - *lightslider.js*- The imported code passed without errors
 - *script.js* - Three Semicolon were missing in my code, I corrected the errors adding semicolons accordingly. Screenshot below
 ![JSHint script.js errors](https://github.com/Nicola2309/-MS2/blob/master/assets/images/readme-pics/jshint-script.png)
-- *maps.js* - received just several warnings as shown in the screenshots below. The majority of the warinings highlight the use of ES6 and the elements available in that notation, three lines are actually interesting:
+- *maps.js* - received just several warnings as shown in the screenshots below. The majority of the warnings highlight the use of ES6 and the elements available in that notation, three lines are actually interesting:
     * 455 : Missing semicolon - Corrected.
     * 150 : Unnecessary semicolon - Corrected.
-    * 142 : The Function declared references an outer scope variable, may leading to confusing semantics - The code works and is efficient with this semantic, its reduced size and specificity eliminates most of the possible human confusion ; in the future and for larger codes I mighit find other solutions to implement functions in it.
+    * 142 : The Function declared references an outer scope variable, may leading to confusing semantics - The code works and is efficient with this semantic, its reduced size and specificity eliminates most of the possible human confusion ; in the future and for larger codes I might find other solutions to implement functions in it.
 ![JSHint maps.js errors](https://github.com/Nicola2309/-MS2/blob/master/assets/images/readme-pics/jshint-map.png)
 ![JSHint maps.js errors](https://github.com/Nicola2309/-MS2/blob/master/assets/images/readme-pics/jshint-map1.png)
 - *myemailjs.js* - Passed without errors
@@ -127,7 +127,7 @@ When the user clicks on navigation elements the site is expected to bring the us
 ### Maps API
 
 - Testing all the Customized Markers in the map, expected to :
-    * Open an infowindow containig :
+    * Open an infowindow containing :
         * Fictional Image of the place, not necessarily the same as the one showed in the Carousel sections.
         * The name of the location under the picture as a title
         * A link to the official website of the location
@@ -138,7 +138,7 @@ When the user clicks on navigation elements the site is expected to bring the us
 ### Carousel Sections
 
 - The imported carousel has been very useful to get a fast building of this tool, the owner though didn't think it for a design as responsive as I needed:
-    * Responsiveness test - Failed on small and extra small devices. The content was splitted impeding a positive UX.
+    * Responsiveness test - Failed on small and extra small devices. The content was split impeding a positive UX.
 - Margins and paddings have been modified to make the content readable. The carousel is acting as expected in every section and screensize.
 
 
@@ -158,5 +158,5 @@ When the user clicks on navigation elements the site is expected to bring the us
 I manually tested the design of the live project by doing the following:
 - Using Google Developer Tools to view the project on devices with different screen sizes.
 - Checking whether the Google Maps feature still worked as planned on smaller devices, without compromising the ability to view the information stored on each marker. 
-- Controlling the responsiveness of the carousel imported from the tutorial linked in README, that would explain text an pictures of each element clearly on every device, being fullu visible.
+- Controlling the responsiveness of the carousel imported from the tutorial linked in README, that would explain text an pictures of each element clearly on every device, being fully visible.
 - Asking for feedback from friends and family who opened and interacted with the project on their devices.
