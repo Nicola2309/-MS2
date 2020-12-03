@@ -164,3 +164,5 @@ I manually tested the design of the live project by doing the following:
 - Checking whether the Google Maps feature still worked as planned on smaller devices, without compromising the ability to view the information stored on each marker. 
 - Controlling the responsiveness of the carousel imported from the tutorial linked in README, that would explain text an pictures of each element clearly on every device, being fully visible.
 - Asking for feedback from friends and family who opened and interacted with the project on their devices.
+
+Return to the general README file clicking [here](https://github.com/Nicola2309/-MS2/blob/master/README.md)
