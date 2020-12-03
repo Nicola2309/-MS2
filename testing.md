@@ -157,6 +157,32 @@ When the user clicks on navigation elements the site is expected to bring the us
 - When the user clicks the button since it's visible, the will take the user to the top of the web page.
     * Upon testing the site responds as expected
 
+### Bugs encountered
+
+- **Google Maps Places Api not working**
+    * The Places API functions were failing to load the locations in the searchBox and the Map. This bug was caused by mistakenly having let the functions out of the initMap() function, and it was solved integrating the functions whithin the one responsible for generating the map.
+        * In line 19 of the [bugged version](https://github.com/Nicola2309/-MS2/blob/master/assets/images/readme-pics/maps-bugged-code1.png) of the code there's the '}' that will be repositioned
+        * In the [current version](https://github.com/Nicola2309/-MS2/blob/master/assets/images/readme-pics/maps-solved-code1.png) of the code the '}' is absent and has been replaced in line 82
+
+- **Google Maps API Customized Markers appearing portioned**
+    * Each marker was appearing as just a portion of itself, the reason is in the property of the icons object I was using, found out through this [Stackoverflow question](https://stackoverflow.com/questions/15096461/resize-google-maps-marker-icon-image). The error was using the property 'size' in place of 'scaledSize', the solved code is shown below:
+```javascript
+function setMarkers(map) {
+	var icons = {
+		pool: {
+			icon: {
+				url: 'assets/images/icons/spring-icon.png',
+				scaledSize: new google.maps.Size(30, 30),
+				anchor: new google.maps.Point(10, 20),
+			}
+		},
+```
+
+- **EmailJS not delivering emails**
+    * The code was implemented poorly in a tired moment, the mistakes are easy to spot and the bug was caused by writing the wrong properties' values.
+        * [Here](https://github.com/Nicola2309/-MS2/blob/master/assets/images/readme-pics/emailjs-bugged-code1.png) is the bugged version of the code
+        * [Here](https://github.com/Nicola2309/-MS2/blob/master/assets/images/readme-pics/emailjs-solved-code1.png) is the current version of the code, solved.
+
 
 
 ### Testing the design's responsiveness on several screen sizes
