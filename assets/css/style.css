@@ -162,7 +162,7 @@ a {
 }
 
 .lSAction>a {
-	opacity: 1;
+	opacity: 1!important;
 }
 
 
@@ -170,8 +170,7 @@ a {
 
 .btn-primary {
 	color: #fff;
-	background-color: blue;
-	border-color: blue;
+	background-color: #17C094;
 	font-family: 'Cormorant SC', serif;
 	font-size: x-large;
 }
@@ -201,7 +200,7 @@ a {
 
 .fab {
 	font-size: 1.6em;
-	color: blue;
+	color: #17C094;
 	margin-right: 9px;
 	margin-left: 9px;
 }
@@ -332,7 +331,6 @@ a {
 	.box,
 	.model {
 		width: 372px;
-		;
 		height: 210px;
 	}
 	.fas {

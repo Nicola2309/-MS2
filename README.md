@@ -6,7 +6,7 @@
 ![Tuscany Thermal Wellness Responsive Design](https://github.com/Nicola2309/-MS2/blob/master/assets/images/readme-pics/ami-responsive.png)
 
 
-*Tuscany Thermal Wellness*  is a fictional website that aims to promote hot springs and Spa's of Tuscany and the related activities in those areas, and provide the user with a list of beautiful, tried and highly recommended places
+*Tuscany Thermal Wellness*  is a fictional travel company website that aims to promote hot springs and Spa's of Tuscany and the related activities in those areas, and provide the user with a list of beautiful, tried and highly recommended places
 to visit in Tuscany. The content online about all the places to go and visit is generally too overwhelming for the user to pick their best choice in a new environment.
 
 The idea for this project came to me in my numerous visits in the thermal sites in southern Tuscany, and I realized that those areas
@@ -24,7 +24,7 @@ The main requirements were to make an interactive and responsive website with HT
 The site owner wants to share the experience in visiting Tuscany in a practical and easy way for a wide audience which already visits Tuscany or would like to, 
 so to offer a relax focused vacation with all the classic and special places to visit.
 
-### Man Aims
+### Main Aims
 
 * To provide an intuitive way of locate and learn highly recommended places.
 
@@ -32,27 +32,27 @@ so to offer a relax focused vacation with all the classic and special places to 
 
 * To make it easy for the user to go through the wesite, by having a clear menu bar including links to the different page sections of the website, and a styled arrow to go back at the top of the page.
 
-*  To create a design that would be fully responsive on all devices and screen sizes.
+* To create a design that would be fully responsive on all devices and screen sizes.
 
 ### User Stories
 
 The following User Stories helped me to create a design that would satisfy the needs of several different types of users.
 
-#### Project StakeHolders
+#### Project Stakeholders
 
 - I am the creator of the website and I want to see it succeed. I would like to attract users searching for a relaxing vacation and in need of a structured list of precious advices saving time, money and sometime the experience of the user.
 
-#### New users
+#### New Users
 
 - I am a user who is looking into a relaxing vacation in Tuscany , I want to learn more about the best things to do and see in Tuscany, its recommended restaurants, and have the best from its different areas.
 - I am a user who needs help in planning a relaxing vacation in Thermal Baths. I need a reliable service to contact in order to get valuable information before my trip.
 
-#### Returning users
+#### Returning Users
 
-- I am a user who visits often Tuscany and its Thermal baths. I want to use this website to see which sites I didn't visit yet and what to do in that area.
+- I am a user who visits often Tuscany and its Thermal Baths. I want to use this website to see which sites I didn't visit yet and what to do in that area.
 - I am a user who wants to visit the less known parts of Tuscany and I need a service that can put together the fragmented information I can find online.
 
-#### Frequent user
+#### Frequent User
 
 - As a frequent user, I want to check to see if there are any newly added locations or activities.
 
@@ -76,9 +76,10 @@ The following User Stories helped me to create a design that would satisfy the n
 #### Colour Scheme
 
 - The three main colours used are:
-    * blue from the hero picture: #00a4df
-    * grey of the navbar, footer and carousel box:#e5e5e5
-    * white of the backround: #ffffff
+    * Blue from the hero picture: #00a4df
+    * Green from the logo upper wave, used in Submit button and Social Media icons : #17C094
+    * Grey of the navbar, footer and carousel box: #e5e5e5
+    * White of the backround: #ffffff
 
 #### Typography
 
@@ -92,13 +93,13 @@ The following User Stories helped me to create a design that would satisfy the n
 ### Wireframing with Figma
 
 Design for desktop devices:
-![My workspace on Figma](https://github.com/Nicola2309/-MS2/blob/master/assets/images/readme-pics/wireframe-desktop.png)
+[My responsive design for Desktop devices](https://github.com/Nicola2309/-MS2/blob/master/assets/images/readme-pics/rsz-wireframe-desktop.png)
 
 Design for mobile devices:
-![My responsive design for mobile devices](https://github.com/Nicola2309/-MS2/blob/master/assets/images/readme-pics/wireframe-phone.png)
+[My responsive design for mobile devices](https://github.com/Nicola2309/-MS2/blob/master/assets/images/readme-pics/rsz-wireframe-phone.png)
 
 Design for tablet devices:
-![My responsive design for tablet devices](https://github.com/Nicola2309/-MS2/blob/master/assets/images/readme-pics/wireframe-tablet.png)
+[My responsive design for tablet devices](https://github.com/Nicola2309/-MS2/blob/master/assets/images/readme-pics/rsz-wireframe-tablet.png)
 
 [The entire workspace can be viewed on Figma with this link.](https://www.figma.com/file/jc8QKDwQCQ1ecvrTFuogfB/MS's?node-id=0%3A1)
 
@@ -160,6 +161,8 @@ I used a number of languages, frameworks and tools to construct my website. Thes
     - This was a great tool throughout the project to check whether there were any errors in my HTML and CSS code (as discussed in more detail below).
 * [JSHint](https://jshint.com/) 
     - This tool helped me test my JavaScript and jQuery code (explained in more detail in the Testing section below). 
+* [PicResize](https://picresize.com/en/results)
+    - To resize wirframes pictures.
 * [AmIResponsive](http://ami.responsivedesign.is/#)
     - To implement the responsive image of my website in the project.
 
@@ -290,24 +293,30 @@ The images are from Pexels, and Pixabay and are referenced below.
 - [Image of the sky from the inside of a brown building](https://pixabay.com/photos/architecture-clouds-wall-5433366/)
 
 
+**Additional Support**
+
+I used these tutorials to help me complete and make functional the notions absorbed from Google Docs, which were very useful but not as much as these tutorials who showed me practically the action of every function and guided me to the understanding of the Google Maps API and its functionalities like Customing Markers, Closing the InfoWindow after clicking on another marker for a better UX, and adding the Places API to implement the SearchBox on top of the map.
+
+* [Maps Markers and Infowindo Tutorial](https://www.youtube.com/watch?v=Xptz0GQ2DO4&ab_channel=PradipDebnath)
+* [Maps Places API Tutotial](https://www.youtube.com/watch?v=oVr6unKZbg4&ab_channel=DevelopMindfully)
+* [Resizing Maps Markers Tutorial](https://www.youtube.com/watch?v=Zxf1mnP5zcw)
+* [Scroll to top Button, W3School](https://www.w3schools.com/howto/howto_js_scroll_to_top.asp)
+
+
+I used the code from this Tutorial and this source to have a consistent Carousel in Javascript in my project, wishing to be able to build it all by myself the next time I need one.
+
+* [Carousel Tutorial](https://www.youtube.com/watch?v=drOgpionKpY&ab_channel=Going-ToInternet)
+* [Github Page](https://github.com/sachinchoolur/lightslider)
+
+
 ### Acknowledgements
 
 Thank you to the following people who helped with support, inspiration and guidance at different stages in the project:
 
 - The guidance and support of my mentor Seun Owonikoko
 - The supportive *Code Institute* community, including my fellow students and the tutor support team
-- Michelle Clement and Miranda Thewlis for their useful and well made repositories, where I could see which tutorials were better to follow and use part of the highlighted usable Readme file parts
+- [Michelle Clement](https://github.com/michellelclement) and [Miranda Thewlis](https://github.com/mkthewlis) for their useful and well made repositories, where I could see which tutorials were better to follow and use part of the highlighted usable Readme file parts
 - My family and friends for their patience and honest critique throughout
 
-**Additiona Support**
 
-I used these tutorials to help me complete and make functional the notions absorbed from Google Docs, which were very useful but not as much as these tutorials who showed me practically the action of every function and guided me to the understanding of the Google Maps API and its functionalities like Customing Markers, Closing the InfoWindow after clicking on another marker for a better UX, and adding the Places API to implement the SearchBox on top of the map.
-
-* [Maps Markers and Infowindo Tutorial](https://www.youtube.com/watch?v=Xptz0GQ2DO4&ab_channel=PradipDebnath)
-* [Maps Places API Tutotial](https://www.youtube.com/watch?v=oVr6unKZbg4&ab_channel=DevelopMindfully)
-* [Scroll to top Button, W3School](https://www.w3schools.com/howto/howto_js_scroll_to_top.asp)
-
-I used the code from this Tutorial and this source to have a consistent Carousel in Javascript in my project, wishing to be able to build it all by myself the next time I need one. The source code link is in the Description of the video.
-
-* [Carousel Tutorial](https://www.youtube.com/watch?v=drOgpionKpY&ab_channel=Going-ToInternet)
 

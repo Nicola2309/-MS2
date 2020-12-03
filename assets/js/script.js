@@ -1,5 +1,5 @@
 /* Sliding Carousel from https://github.com/sachinchoolur/lightslider
-autoWidth changed from '#autoWidth' to '.autoWidth', I needed to use the carousel more than once*/
+autoWidth changed from '#autoWidth' to '.autoWidth', so to to use the carousel more than once*/
 $(document).ready(function () {
 	$('.autoWidth').lightSlider({
 		autoWidth: true,

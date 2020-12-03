@@ -6,7 +6,7 @@ The testing process below includes:
 - Checking responsiveness of design on all screen sizes
 - Checking website compatibility on different browsers
 - Manually testing the functionality of all links
-- Manually testing the sign up form
+- Manually testing the sigbvn up form
 
 Return to the general README file clicking [here](https://github.com/Nicola2309/-MS2/blob/master/README.md)
 

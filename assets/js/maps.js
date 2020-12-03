@@ -2,7 +2,7 @@ var map;
 var infoObj = [];
 
 
-// Function implementing the map, markers, infowindow behavior built through Google Docs and the tutorial of Pradip Debnath, link in README
+// Function implementing the map, markers, infowindow behavior built through Google Docs and the tutorial of Pradip Debnath, link in README.
 function initMap() {
 	var centerCords = {
 		lat: 43.393074,
@@ -11,28 +11,31 @@ function initMap() {
 	map = new google.maps.Map(document.getElementById('map'), {
 		zoom: 8,
 		center: centerCords
-	});
+    });
+    // Function activating Customized Markers
 	setMarkers(map);
 
-	// Search Box from Google Docs and the Develop Mindfully Tutorial and Michelle Clement ms2
+	// Search Box from Google Docs and the Develop Mindfully Tutorial and Michelle Clement MS2, links in README.
 	const input = document.getElementById("search");
-
-	const searchBox = new google.maps.places.SearchBox(input);
-
+    const searchBox = new google.maps.places.SearchBox(input);
+    
+    // Function restrincting the SearchBox results to the locations in the current Maps Viewport.
 	map.addListener("bounds_changed", () => {
 		searchBox.setBounds(map.getBounds());
 	});
 
 	var markersSearched = [];
 
+    // Function firing when the user selects a prediction from the list generated in the Searchbox.
 	searchBox.addListener("places_changed", () => {
-
 		const places = searchBox.getPlaces();
 
+        //If the array of places is empty, return.
 		if (places.length == 0) {
 			return;
 		}
 
+        // Function cleaning the Map from any marker generated from a previous search.     
 		markersSearched.forEach((m) => {
 			m.setMap(null);
 			var markersSearched = [];
@@ -42,6 +45,7 @@ function initMap() {
 
 		const bounds = new google.maps.LatLngBounds();
 
+        // Function iterating over the array of places and adding a marker for each place in places.
 		places.forEach((p) => {
 			if (!p.geometry) {
 				return;
@@ -62,8 +66,9 @@ function initMap() {
 					icon: icond,
 					position: p.geometry.location,
 				})
-			);
-
+            );
+            
+            // This statement updates the bounds of our biased map to take each place into account. Here is the Docs Link to the Coordinates Section : https://developers.google.com/maps/documentation/javascript/reference/coordinates#LatLngBounds 
 			if (p.geometry.viewport) {
 				bounds.union(p.geometry.viewport);
 			} else {
@@ -71,13 +76,13 @@ function initMap() {
 			}
 
 		});
-
+        // The fitBounds(); method, passing the bounds const in, puts the new bounds into effect.
 		map.fitBounds(bounds);
 	});
 }
 
 
-// -----------------------------------------------  Close Infowindow Function
+// Close Infowindow Function.
 function closeOtherInfo() {
 	if (infoObj.length > 0) {
 		infoObj[0].set("marker", null);
@@ -88,14 +93,12 @@ function closeOtherInfo() {
 }
 
 
-// ------------------------------------------------ Resizing Markers from Google docs and Traversy Media tutorial, link in README
-
-
+// Resizing Markers from Google docs and Traversy Media tutorial, link in README
 function setMarkers(map) {
+    //Icons from Google Docs link this page in *NOTE : https://developers.google.com/maps/documentation/javascript/custom-markers
 	var icons = {
 		pool: {
 			icon: {
-            //Icon from Google Docs link in *NOTE : https://developers.google.com/maps/documentation/javascript/custom-markers
 				url: 'assets/images/icons/spring-icon.png',
 				scaledSize: new google.maps.Size(30, 30),
 				anchor: new google.maps.Point(10, 20),
@@ -103,7 +106,6 @@ function setMarkers(map) {
 		},
 		spa: {
 			icon: {
-            //Icon from Google Docs link in *NOTE : https://developers.google.com/maps/documentation/javascript/custom-markers
 				url: 'assets/images/icons/pool-icon.png',
 				scaledSize: new google.maps.Size(27, 27),
 				anchor: new google.maps.Point(10, 20),
@@ -111,14 +113,12 @@ function setMarkers(map) {
 		},
 		restaurant: {
 			icon: {
-            //Icon from Google Docs link in *NOTE : https://developers.google.com/maps/documentation/javascript/custom-markers
 				url: 'assets/images/icons/dining-icon.png',
 				scaledSize: new google.maps.Size(27, 27),
 				anchor: new google.maps.Point(20, 20),
 			}
 		},
 		landmark: {
-            //Icon from Google Docs link in *NOTE : https://developers.google.com/maps/documentation/javascript/custom-markers
 			icon: {
 				url: 'assets/images/icons/red-pushpin.png',
 				scaledSize: new google.maps.Size(27, 27),
@@ -128,7 +128,7 @@ function setMarkers(map) {
 
 	};
 
-    //Looping through markers content to address infowindow
+    // Looping through markers content to add infowindow 
 	for (let i = 0; i < markersOnMap.length; i++) {
 		let contentString = markersOnMap[i].placeName;
 
@@ -142,7 +142,7 @@ function setMarkers(map) {
 			content: contentString,
 		});
 
-
+        // On clicking another Marker this function closes the previously opened infowindow
 		marker.addListener("click", () => {
 			closeOtherInfo();
 			infowindow.open(marker.get('map'), marker);
