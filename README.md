@@ -31,11 +31,11 @@ The main requirements were to make an interactive and responsive website with HT
     - [Design Process](#Design-Process)
 - [**Features**](#Features)
     - [Existing features](#Existing-website-features)
-    - [Features left to implement](#Features-to-implement-in-the-future)
+    - [Features to implement in the future](#Features-to-implement-in-the-future)
 - [**Technologies used**](#Technologies-used)
 - [**Testing**](https://github.com/Nicola2309/-MS2/blob/master/testing.md)
 - [**Deployment**](#Deployment)
-    - [Local deployment](#Deploying-my-project)
+    - [Deploying my project ](#Deploying-my-project)
     - [Deploying this project to Github](#Deploying-to-GitHub-Pages)
     - [Deploying with Google Maps API](#Deploying-with-Google-Maps-API)
     - [Deploying with EmailJS](#Deploying-with-EmailJS)
@@ -153,7 +153,11 @@ Design for tablet devices:
 * Contact Us Section : 
     - The little presentation of the section explains the user the purpose of the service and gives the user some ideas for questions to ask.
     - The contact form is an easy and direct way for the user to ask a question to the site owner. 
+    - Once filled the contact form an alert message will show up to thank the user.
     - [EmailJS](https://www.emailjs.com/) sends the email directly from the website to the website owner and an automatic reply informing the user that the email has been received and a detailed reply answering the user questions will be sent soon.
+
+* Scroll To Top Button :
+    - This feature has been added to give the user the possibility to scroll immediately back to the top of the webpage when needed.
 
 ### Features to implement in the future
 

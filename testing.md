@@ -134,11 +134,17 @@ When the user clicks on navigation elements the site is expected to bring the us
     * Onclicking another Customized Marker the previous infowindow must be closed.
 - The tests passed for every location in the map.
 
+### EmailJS
+
+- Testing the EmailJS section and the traffic to the website owner and the user, expected to:
+    * display an alert message to interact with after filling the form.
+    * Send an Email to the website owner and an automatic reply to the user.
+- The functionality was tested using a second email account of the website builder pretending to be the email address of the user. Tests passed.
 
 ### Carousel Sections
 
 - The imported carousel has been very useful to get a fast building of this tool, the owner though didn't think it for a design as responsive as I needed:
-    * Responsiveness test - Failed on small and extra small devices. The content was split impeding a positive UX.
+    * Responsiveness test - Failed on small and extra small devices. The content was split in half impeding a positive UX.
 - Margins and paddings have been modified to make the content readable. The carousel is acting as expected in every section and screensize.
 
 
