@@ -10,14 +10,36 @@ The testing process below includes:
 
 Return to the general README file clicking [here](https://github.com/Nicola2309/-MS2/blob/master/README.md)
 
+## Table of contents
+
+- [**Testing User Stories**](#Testing-User-Stories)
+    - [Project Stakeholders](#Project-Stakeholders)
+    - [New Users](#New-Users)
+    - [Returning Users](#Returning-Users)
+    - [Frequent User](#Frequent-User)
+- [**Validating the HTML, CSS and JavaScript code**](#Validating-the-HTML,-CSS-and-JavaScript-code)
+    - [W3C HTML Validator](#W3C-HTML-Validator)
+    - [W3C CSS Validator](#W3C-CSS-Validator)
+    - [Javascript](#Javascript)
+- [**Testing compatibility with different browsers**](#Testing-compatibility-with-different-browsers)
+- [**Navigation**](#Navigation)
+- [**Jumbotron**](#Jumbotron)
+- [**Maps API**](#Maps-API)
+- [**EmailJS**](#EmailJS)
+- [**Carousel Sections**](#Carousel-Sections)
+- [**Scroll To Top Button**](#Scroll-To-Top-Button)
+- [**Bugs**](#Bugs)
+- [**Testing the design's responsiveness on several screen sizes**](#Testing-the-design's-responsiveness-on-several-screen-sizes)
+
+
 ### Testing User Stories
 
-#### project stakeholders
+#### Project Stakeholders
 
 The creator of the website desire is to create a minimal design with all the information a user might require, so to reduce the enormous amount of data the user should 
 go through in order to collect the desired places to visit and experience.
 
-#### New User
+#### New Users
 
 *User one who would like to have a full-experience vacation:*
 - As this user would like to have hints about the offers of the region, would land on the website and have this journey:
@@ -55,7 +77,7 @@ These navigation options leave a user with a positive experience about the usage
 ### Validating the HTML, CSS and JavaScript code
 
 
-#### W3C HTML Validator*
+#### W3C HTML Validator
 * Ran index.html through [W3C Markup Validation Service](https://validator.w3.org/) to check there were some Bad Value errors: 
     * Failed 
         - 8 images were including spaces in their source attributes
@@ -90,6 +112,7 @@ This Brought up the following warnings and the step that I took to correct them:
 ![JSHint maps.js errors](https://github.com/Nicola2309/-MS2/blob/master/assets/images/readme-pics/jshint-map.png)
 ![JSHint maps.js errors](https://github.com/Nicola2309/-MS2/blob/master/assets/images/readme-pics/jshint-map1.png)
 - *myemailjs.js* - Passed without errors
+
 
 ### Testing compatibility with different browsers
 
@@ -156,6 +179,9 @@ When the user clicks on navigation elements the site is expected to bring the us
       from the top.
 - When the user clicks the button since it's visible, the will take the user to the top of the web page.
     * Upon testing the site responds as expected
+
+### Bugs
+I didn't find any interesting bug.
 
 ### Testing the design's responsiveness on several screen sizes
 
