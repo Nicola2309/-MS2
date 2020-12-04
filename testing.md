@@ -17,7 +17,7 @@ Return to the general README file clicking [here](https://github.com/Nicola2309/
     - [New Users](#New-Users)
     - [Returning Users](#Returning-Users)
     - [Frequent User](#Frequent-User)
-- [**Validating the HTML, CSS and JavaScript code**](#Validating-the-HTML,-CSS-and-JavaScript-code)
+- [**Validating the project code**](#Validating-the-project-code)
     - [W3C HTML Validator](#W3C-HTML-Validator)
     - [W3C CSS Validator](#W3C-CSS-Validator)
     - [Javascript](#Javascript)
@@ -29,7 +29,7 @@ Return to the general README file clicking [here](https://github.com/Nicola2309/
 - [**Carousel Sections**](#Carousel-Sections)
 - [**Scroll To Top Button**](#Scroll-To-Top-Button)
 - [**Bugs**](#Bugs)
-- [**Testing the design's responsiveness on several screen sizes**](#Testing-the-design's-responsiveness-on-several-screen-sizes)
+- [**Testing design responsiveness on several screen sizes**](#Testing-design-responsiveness-on-several-screen-sizes)
 
 
 ### Testing User Stories
@@ -74,8 +74,16 @@ go through in order to collect the desired places to visit and experience.
     * The user can freely decide if to read the brief website description of the area or to click on the website link and learn all about it.
 These navigation options leave a user with a positive experience about the usage of the website as a resource to connect to the various desired places at different levels.
 
-### Validating the HTML, CSS and JavaScript code
+#### Frequent User 
+*This user wants to find updates of locations and places advised:*
+- This user uses the website frequently to check updates of the locations advised, the user can do it this way:
+    * The user can scroll to the map and check if the quantity of markers on the map has increased.
+    * The user can click on markers not clicked before and preview the place through the infowindow.
+    * The user can navigate the different carousel sections and check in every category of interest if updates have been made.
+- These options are aimed to satisfy the user curiosity and provide a clear and intuitive way to learn more a bout new locations.
 
+
+### Validating the project code
 
 #### W3C HTML Validator
 * Ran index.html through [W3C Markup Validation Service](https://validator.w3.org/) to check there were some Bad Value errors: 
