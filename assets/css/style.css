@@ -340,7 +340,7 @@ a {
 		font-size: 1.5em;
 	}
 	.lSSlideOuter .lSPager.lSpg>li {
-		padding: 0;
+		padding: 0 3px!important;
 	}
 	.lSSlideOuter .lSPager.lSpg>li a {
 		margin: 0 5px 0 10px;
@@ -365,7 +365,7 @@ a {
 		width: 375px;
 	}
     .details P{
-        padding-right: 36px!important;
+        padding-right: 27px;
     }
 }
 
