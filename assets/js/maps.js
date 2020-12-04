@@ -205,22 +205,6 @@ var markersOnMap = [
 		type: 'spa'
 	},
 	{
-		placeName: "<img src='assets/images/150px/theiachianciano-150px-pexels-snapwire-9422 (1).jpg'><h4>Piscine Termali Theia, Chianciano</h4><a target='_blank' href='https://www.piscinetermalitheia.it/'>Click here for the Official Website</a>",
-		LatLng: [{
-			lat: 43.043209,
-			lng: 11.809026
-		}],
-		type: 'spa'
-	},
-	{
-		placeName: "<img src='assets/images/150px/sensorialichianciano-150px-pexels-barbara-ribeiro.jpg'><h4>Terme Sensoriali di Chianciano</h4><a target='_blank' href='https://www.termesensoriali.it/'>Click here for the Official Website</a>",
-		LatLng: [{
-			lat: 43.042778,
-			lng: 11.816051
-		}],
-		type: 'spa'
-	},
-	{
 		placeName: "<img src='assets/images/150px/rapolano-150px-pexels-vincent-rivaud.jpg'><h4>Terme San Giovanni, Rapolano</h4><a target='_blank' href='https://www.termesangiovanni.it/it/home'>Click here for the Official Website</a>",
 		LatLng: [{
 			lat: 43.280160,
