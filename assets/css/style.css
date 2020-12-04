@@ -332,6 +332,7 @@ a {
 	.model {
 		width: 372px;
 		height: 210px;
+        
 	}
 	.fas {
 		margin: 30px 0 12px 0;
@@ -363,10 +364,9 @@ a {
 	.model {
 		width: 375px;
 	}
-	.details p {
-		padding-left: 9px;
-		padding-right: 18px;
-	}
+    .details P{
+        padding-right: 36px!important;
+    }
 }
 
 @media screen and ( max-width:360px) {

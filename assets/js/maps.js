@@ -157,14 +157,6 @@ function setMarkers(map) {
 var markersOnMap = [
 	// Hot Waters Locations Data
 	{
-		placeName: "<img src='assets/images/150px/rapolano-150px-pexels-vincent-rivaud.jpg'><h4>Terme di Rapolano</h4><a target='_blank' href='https://www.termesangiovanni.it/it/home'>Click here for the Official Website</a>",
-		LatLng: [{
-			lat: 42.660515,
-			lng: 11.720263
-		}],
-		type: 'spa'
-	},
-	{
 		placeName: "<img src='assets/images/150px/saturnia-mulino-150pxpexels-matheus-bertelli.jpg'><h4>Cascate del Mulino, Saturnia</h4><a target='_blank' href='https://www.cascate-del-mulino.info/'>Click here for the Official Website</a>",
 		LatLng: [{
 			lat: 42.648306,
