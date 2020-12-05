@@ -191,7 +191,7 @@ When the user clicks on navigation elements the site is expected to bring the us
 ### Bugs
 I didn't find any interesting bug.
 
-### Testing the design's responsiveness on several screen sizes
+### Testing design responsiveness on several screen sizes
 
 I manually tested the design of the live project by doing the following:
 - Using Google Developer Tools to view the project on devices with different screen sizes.

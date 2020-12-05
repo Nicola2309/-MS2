@@ -147,8 +147,8 @@ a {
 	font-size: 12px;
 	color: #6a6a74;
 	text-align: center;
-	padding-right: 5px;
-	padding-left: 10px;
+	padding-right: 15px;
+	padding-left: 12px;
 }
 
 .autoWidth {
@@ -330,7 +330,7 @@ a {
 	.details p,
 	.box,
 	.model {
-		width: 372px;
+		width: 330px;
 		height: 210px;
         
 	}
@@ -340,7 +340,7 @@ a {
 		font-size: 1.5em;
 	}
 	.lSSlideOuter .lSPager.lSpg>li {
-		padding: 0 3px!important;
+		padding: 0 4px!important;
 	}
 	.lSSlideOuter .lSPager.lSpg>li a {
 		margin: 0 5px 0 10px;
@@ -363,10 +363,8 @@ a {
 	.box,
 	.model {
 		width: 375px;
+		height: 210px;
 	}
-    .details P{
-        padding-right: 27px;
-    }
 }
 
 @media screen and ( max-width:360px) {
