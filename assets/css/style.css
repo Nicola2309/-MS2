@@ -170,7 +170,7 @@ a {
 
 .btn-primary {
 	color: #fff;
-	background-color: #17C094;
+	background-color: #48c1ef;
 	font-family: 'Cormorant SC', serif;
 	font-size: x-large;
 }
@@ -229,7 +229,7 @@ a {
 }
 
 #myBtn:hover {
-	background-color: #555;
+	background-color: #007bff;
 }
 
 .fas.fa-angle-double-up {
